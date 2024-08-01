@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+
+</head>
+
+<body>
+    <!-- Header & Navbar -->
+    <div class="logos">
+        <div class="container logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="tlc_last gacalogo">
+                    <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">My Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Medical Certificates</a>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+                    <div class="d-inline-flex m-5">
+                        <div class="notificaationbadge">2</div>
+                        <div class="notificaationCaption">New pending medical request</div>
+                    </div>
+                    <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+                    <input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">×</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">My Requests</a></li>
+                <li><a href="#">Medical Certificates</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main -->
+    <div id="container" style="background-color: #f5f7f9;">
+        <div class="container" id="main">
+            <div class="inner_content_dashboard">
+                <div class="inner_content_section_btnone ">
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <div class="tlc_text">
+                                My Certificates <span>(8)</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <table class="applicantsTable">
+                    <thead>
+                        <tr>
+                            <td>Type</td>
+                            <td>Request No.</td>
+                            <td>AME</td>
+                            <td>Request Date</td>
+                            <td>Status</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td data-label="Type">MC Request</td>
+                            <td data-label="Request No.">P.MD.2021.0055466</td>
+                            <td data-label="AME">Ahmed Al Anzi</td>
+                            <td data-label="Request Date">14 / 5 / 2022</td>
+                            <td data-label="Status">
+                                <div class="inprogressstatus">
+                                    <div>
+                                        In Progress
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td data-label="Type">UAS initial Operator Permit</td>
+                            <td data-label="Request No.">P.MD.2021.0055466</td>
+                            <td data-label="AME">Seleem Mohamed</td>
+                            <td data-label="Request Date">27 / 1 / 2022</td>
+                            <td data-label="Status">
+                                <div class="cancelledstsus">
+                                    <div>
+                                        Cancelled
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td data-label="Type">UAS initial Operator Permit</td>
+                            <td data-label="Request No.">P.MD.2021.0055466</td>
+                            <td data-label="AME">Seleem Mohamed</td>
+                            <td data-label="Request Date">27 / 1 / 2022</td>
+                            <td data-label="Status">
+                                <div class="Acceptedstsus">
+                                    <div>
+                                        Accepted
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td data-label="Type">UAS initial Operator Permit</td>
+                            <td data-label="Request No.">P.MD.2021.0055466</td>
+                            <td data-label="AME">Seleem Mohamed</td>
+                            <td data-label="Request Date">27 / 1 / 2022</td>
+                            <td data-label="Status">
+                                <div class="cancelledstsus">
+                                    <div>
+                                        Cancelled
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td data-label="Type">UAS initial Operator Permit</td>
+                            <td data-label="Request No.">P.MD.2021.0055466</td>
+                            <td data-label="AME">Seleem Mohamed</td>
+                            <td data-label="Request Date">27 / 1 / 2022</td>
+                            <td data-label="Status">
+                                <div class="Acceptedstsus">
+                                    <div>
+                                        Accepted
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td data-label="Type">UAS initial Operator Permit</td>
+                            <td data-label="Request No.">P.MD.2021.0055466</td>
+                            <td data-label="AME">Seleem Mohamed</td>
+                            <td data-label="Request Date">27 / 1 / 2022</td>
+                            <td data-label="Status">
+                                <div class="Acceptedstsus">
+                                    <div>
+                                        Accepted
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td data-label="Type">UAS initial Operator Permit</td>
+                            <td data-label="Request No.">P.MD.2021.0055466</td>
+                            <td data-label="AME">Seleem Mohamed</td>
+                            <td data-label="Request Date">27 / 1 / 2022</td>
+                            <td data-label="Status">
+                                <div class="Acceptedstsus">
+                                    <div>
+                                        Accepted
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                        <tr>
+                            <td data-label="Type">UAS initial Operator Permit</td>
+                            <td data-label="Request No.">P.MD.2021.0055466</td>
+                            <td data-label="AME">Seleem Mohamed</td>
+                            <td data-label="Request Date">27 / 1 / 2022</td>
+                            <td data-label="Status">
+                                <div class="Acceptedstsus">
+                                    <div>
+                                        Accepted
+                                    </div>
+                                </div>
+                            </td>
+
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+
+        <!-- Main END -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div>
+                    2021 - All rights reserved to
+                    <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo"> General Authority of Civil
+                    Aviation ©
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <!-- Footer END -->
+
+
+        <!-- Libraries end -->
+        <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+        <script src="./libraries/popper/js/popper.js"></script>
+        <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+        <script src="./libraries/slick-1.8.1/slick.js"></script>
+        <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="./libraries/pushymenu/js/pushy.js"></script>
+        <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+        <script src="./libraries/pdf.worker/pdf.js"></script>
+        <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+        <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+        <!-- Libraries end -->
+        <!-- Scripts end -->
+        <script src="./js/main.js"></script>
+        <!-- Scripts end -->
+
+</body>
+
+</html>

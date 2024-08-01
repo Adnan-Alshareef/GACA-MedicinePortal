@@ -1,0 +1,428 @@
+@media (max-width: 1440px) {
+    .searchbtn {
+        font-size: 15px;
+    }
+
+    #login_card {
+        margin-top: 2vh;
+    }
+
+    .attachMedicalFile label {
+        padding: 5px 20px;
+        width: 100px;
+        height: 40px;
+        font-size: 1.3rem;
+    }
+
+    .removehMedicalFile label {
+        padding: 5px 20px;
+
+        font-size: 1.3rem;
+    }
+
+    .bgid {
+        display: none;
+    }
+
+    .bgidsm {
+        padding: 5px 20px;
+        display: block;
+        background-color: #0075c9;
+        color: white;
+        font-family: 'GR';
+    }
+
+
+}
+
+
+
+@media (max-width: 1200px) {
+
+    .searchbtn {
+        font-size: 10px;
+    }
+
+
+    .verificationInfoXl {
+        display: none;
+    }
+
+    .verificationInfonSm {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 991px) {
+
+    .serech_section {
+        flex-direction: column;
+    }
+
+    .addBtn {
+        width: 100%
+    }
+
+    .proceed_button {
+        width: 100%;
+    }
+
+
+    #login_card {
+        margin-top: 2vh;
+    }
+
+    .op {
+        display: none;
+    }
+
+    .contact_us_op {
+        display: none;
+    }
+
+    .inner_content_section {
+        padding: 15px;
+    }
+
+    .prog_text {
+        font-size: 15px;
+    }
+
+    .progressbar li::before {
+        font-size: 20px;
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        margin: 7.5px auto 10px auto;
+    }
+
+    .d-shadow-none {
+        box-shadow: none !important;
+    }
+
+    .link_form {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .request_status_content {
+        width: 96%;
+    }
+
+    #signout {
+        margin: 10px;
+    }
+
+
+
+
+
+    .w-100-mobile {
+        width: 100% !important;
+    }
+
+}
+
+
+/* Mobile */
+@media screen and (max-width: 776px) {
+
+
+    .smfile {
+        display: flex !important;
+        justify-content: flex-start !important;
+        width: 100vw !important;
+    }
+
+    .spanFile {
+        font-family: 'GB';
+        width: 250px;
+    }
+
+    .serech_section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tlm_text {
+        font-size: 1.5rem;
+    }
+
+
+    .applicantsTable {
+        border: 0;
+    }
+
+    .applicantsTable caption {
+        font-size: 1.3em;
+    }
+
+    .applicantsTable thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .applicantsTable tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    .applicantsTable td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    .applicantsTable td::before {
+        /*
+      * aria-label has no advantage, it won't be read inside a table
+      content: attr(aria-label);
+      */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .applicantsTable td:last-child {
+        border-bottom: 0;
+    }
+
+    .newrbtn {
+        display: block;
+        text-align: center;
+    }
+
+    .centerblock {
+        display: block;
+    }
+
+    .pageHeadrTitle {
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 472px) {
+
+
+    .ame_Search>input:first-child {
+        width: 100%;
+    }
+
+    .AmeSearch-btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 429px) {
+    .tlm_text {
+        font-size: 1rem;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+    .regentire {
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+
+    }
+
+    .erraction {
+        margin: 10px 0 0;
+    }
+
+    .errholderimg {
+        height: 25vh;
+    }
+
+    .errholderimg>div img {
+        width: 200px;
+    }
+
+    .pupupCancel {
+        margin: 0 auto !important;
+
+    }
+
+    .removehMedicalFile label {
+        margin: 0 15px 0 0;
+    }
+
+    .pupupSubmit {
+        margin: 0 auto !important;
+
+    }
+
+    .RequestDetailsDashboarditem {
+        font-size: 16px;
+        font-family: "Greta Arabic AR + LT";
+        border-radius: 0 !important;
+        background-color: transparent !important;
+        color: #2474ba;
+    }
+
+    .Parents {
+        all: initial;
+    }
+
+    .quastion {
+        all: initial;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .Mobileq {
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    #login_card {
+        width: auto;
+        height: auto;
+        margin-top: 2vh;
+    }
+
+    #gaca_logo_w img {
+        width: 99px;
+        height: 34.5px;
+    }
+
+    #application_name {
+        margin-top: 0vh;
+    }
+
+    .menu-btn {
+        color: #2474ba;
+    }
+
+    .welcome_text {
+        color: white;
+    }
+
+    .gacalogo {
+        width: 100%;
+    }
+
+    .tlc_first {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    .tlc_last {
+        float: none;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 1px 2px 4px rgb(0 0 0 / 2%), 0 2px 4px rgb(0 0 0 / 3%), 0 2px 4px rgb(0 0 0 / 4%), 0 2px 4px rgb(0 0 0 / 4%), 0 2px 4px rgb(0 0 0 / 5%), 0 2px 4px rgb(0 0 0 / 7%);
+        margin-top: 15px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+
+    .footerText {
+        text-align: center;
+        font-size: 10px;
+
+    }
+
+    .op,
+    .tlc_last.gacalogo {
+        display: none;
+    }
+
+    footer div {
+        font-size: 9px !important;
+    }
+
+    .op {
+        display: block;
+    }
+
+    .contact_us_op {
+        display: block;
+        padding: 10px !important;
+    }
+
+    .op_logo_image {
+        width: 220px;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .floatingNav {
+        padding: 0px;
+    }
+
+    nav {
+        background-color: white !important;
+    }
+
+    .mobile_th {
+        font-size: 15px;
+        font-family: 'GL';
+    }
+
+    nav.navbar.navbar-expand-lg.navbar-dark div {
+        direction: ltr;
+    }
+
+    table.dataTable thead th:first-child {
+        border-radius: 0px;
+    }
+
+    table.dataTable thead th:last-child {
+        border-radius: 0px;
+    }
+
+    table.dataTable tbody tr:last-child td:first-child {
+        border-radius: 0px;
+    }
+
+    table.dataTable tbody tr:last-child td:last-child {
+        border-radius: 0px;
+    }
+
+    .options_for_table {
+        float: none;
+        margin: 5px auto;
+    }
+
+    .addBtn {
+        width: 100%
+    }
+
+    .cardDispaly {
+        margin: 0 auto;
+    }
+
+    .smlicon {
+        display: block !important;
+        text-align: center !important;
+    }
+
+
+}
+
+@media only screen and (max-width: 380px) {
+    .crdofplat {
+        height: 50vh;
+    }
+}

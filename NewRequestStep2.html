@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+
+</head>
+
+<body>
+    <div class="PageStructure">
+        <div class="navPage">
+            <!-- Header & Navbar -->
+            <div class="logos">
+                <div class="container logos">
+                    <div class="text_link_component t_op_header">
+                        <div class="tlc_first">
+                            <div class="tlc_text">
+                                <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tlc_last gacalogo">
+                            <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a href="./02.home.my.licences.en.html" class="nav-link">My Requests</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./02.home.my.licences.en.html" class="nav-link">Medical Certificates</a>
+                            </li>
+                        </ul>
+
+                        <div class="ms-auto">
+
+                            <div class="d-inline-flex m-5">
+                                <div class="notificaationbadge">2</div>
+                                <div class="notificaationCaption">New pending medical request</div>
+                            </div>
+
+                            <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+                            <input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+                        </div>
+                    </div>
+
+                    <button class="menu-btn">☰</button>
+                </div>
+            </nav>
+            <!-- Pushy Menu -->
+            <nav class="pushy pushy-left">
+                <div class="pushy-content">
+                    <a href="#" class="mobile-x">×</a>
+                    <div id="op-mobile" class="text-center">
+                    </div>
+                    <ul class="mobile-menu">
+
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">My Requests</a></li>
+                        <li><a href="#">Medical Certificates</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Site Overlay -->
+            <div class="site-overlay"></div>
+        </div>
+        <div class="bodyPage">
+            <!-- Main -->
+            <div id="container" style="background-color: #f5f7f9;">
+                <div class="container" id="main">
+                    <div class="inner_content_dashboard">
+                        <div class="text_link_component">
+                            <div class=" tlc_first">
+                                <div class="tlc_text">
+                                    New Request <span class="requestNo">(FS.MD.01.A-REQUEST MC)</span>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+
+                        <div class="inner_content_section ">
+                            <ul class="progressbar bars-size-5">
+                                <li class="active">
+                                    <p class="prog_text">Instructions</p>
+                                </li>
+                                <li class="inprog">
+                                    <p class="prog_text">Application Information</p>
+                                </li>
+                                <li>
+                                    <p class="prog_text">Mediacl History</p>
+                                </li>
+                                <li>
+                                    <p class="prog_text">Other Information</p>
+                                </li>
+                                <li>
+                                    <p class="prog_text">Send Request</p>
+                                </li>
+
+                            </ul>
+                            <form class="uas_form" action="#" novalidate>
+                                <div class="form-group">
+                                    <div class="hr_section">
+                                        <span class="hr_content">Application Information</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12  mb-3">
+                                            <label>1. Class of medical services appled for:</label>
+                                            <select class="form-select" required>
+                                                <option value="" disabled selected>Select</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mb-3">
+                                            <label>2. Name</label>
+                                            <input type="text" class="bg-light form-control" required>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mb-3">
+                                            <label>Surname</label>
+                                            <input type="text" class="bg-light form-control" required>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mb-3">
+                                            <label>ID Number</label>
+                                            <input type="text" class="bg-light form-control" required>
+                                        </div>
+                                        <div class="col-lg-3 col-12 mb-3">
+                                            <label>3. Date of birth</label>
+                                            <div class="input-group">
+                                                <input type="text"
+                                                    class="bg-light form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    id="dateofissue" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-3">
+                                            <label>4. Hair Color</label>
+                                            <input type="text" class="bg-light form-control" required>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3">
+                                            <label>5. Eyes color</label>
+                                            <input type="text" class="bg-light form-control" required>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3">
+                                            <label>6. Gender</label>
+                                            <select class="form-select bg-light" required>
+                                                <option value="" selected>male</option>
+                                                <option value="">Female</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-lg-2 mt-3">
+                                            <label>7.a P.O Box</label>
+                                            <input type="text" class="form-control bg-light" required>
+                                        </div>
+                                        <div class="col-lg-2 mt-3">
+                                            <label>Zip Code</label>
+                                            <input type="text" class="form-control bg-light" required>
+                                        </div>
+                                        <div class="col-lg-2 mt-3">
+                                            <label>Add on</label>
+                                            <input type="text" class="form-control bg-light" required>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <label>Address</label>
+                                            <input type="text" class="bg-light form-control" required>
+                                        </div>
+
+                                        <div class="col-lg-4 mt-3">
+                                            <label>Country of nationality
+                                            </label>
+                                            <input type="text" class="form-control bg-light" required>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>District
+                                            </label>
+                                            <input type="text" class="form-control bg-light" required>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>City
+                                            </label>
+                                            <input type="text" class="form-control bg-light" required>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>7.b Phone No.
+                                            </label>
+                                            <input type="tel" class="form-control bg-light" required>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>Mobile No.
+                                            </label>
+                                            <input type="tel" class="form-control bg-light" required>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>7.c Email
+                                            </label>
+                                            <input type="email" class="form-control bg-light" required>
+                                        </div>
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Airman Ceritificate</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12  mb-3">
+                                            <label>8. Type of airman certificate held :</label>
+                                            <select class="form-select" required>
+                                                <option value="" disabled selected>Select</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Employment Information</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-4 mt-3">
+                                            <div id="Occupation">
+                                                <label>9. Occupation
+                                                </label>
+                                                <input type="text" class="form-control " required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mt-3">
+                                            <div id="Employer">
+                                                <label>10. Employer
+                                                </label>
+                                                <input type="text" class="form-control" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mt-3">
+                                            <div class="form-check mt-4">
+                                                <input class="form-check-input mt-3" type="checkbox" value=""
+                                                    onchange="toggleStatus()" id="SelfemployedCheck" required>
+                                                <label class="form-check-label mt-3" for="SelfemployedCheck">
+                                                    Self employed
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hr_section">
+                                        <span class="hr_content">13. Medical Certificate Previously Denied</span>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 mt-2">
+                                            <div class="form-check mt-4">
+                                                <input class="form-check-input mt-3" type="checkbox" value=""
+                                                    onchange="toggleStatu()" id="PreviouslyDenied" required>
+                                                <label class="form-check-label mt-2 Denied" for="PreviouslyDenied">
+                                                    Has your GACA, FAA, JAR or any national airman medical
+                                                    certificate ever been denied, suspended or revoked ?
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-3 mt-3">
+                                            <label>If yes select date :</label>
+                                            <div class="input-group" id="dateofDenied">
+                                                <input type="text"
+                                                    class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Total Pilot Time</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check checkboxList mt-3">
+                                            <input class="form-check-input" type="checkbox" id="pilot"
+                                                onchange="show_explaination(this.id)" required>
+                                            <label for="pilot">
+                                                <span class="symptoms">I am Pilot</span>
+                                            </label>
+                                        </div>
+                                        <!-- End of First check box -->
+
+                                        <!--------------------------------------->
+                                        <!--First check box explantion Start here-->
+                                        <div id="pilot_explain">
+                                            <div class="row mt-2">
+                                                <div class="col-md-3 col-sm-6 form-group">
+                                                    <label for="dateofPilot">To Date</label>
+                                                    <div class="input-group" id="dateofPilot">
+                                                        <input type="text"
+                                                            class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                            required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 form-group">
+                                                    <label for="pilottype">Type</label>
+                                                    <select id="pilottype" class="form-select" required>
+                                                        <option value="" selected>GACA</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-3 col-sm-6 form-group">
+                                                    <label for="past">Past 5 Months</label>
+                                                    <input type="text" class="form-control" required>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 form-group">
+                                                    <label for="pasttype">Type</label>
+                                                    <select id="pasttype" class="form-select" required>
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Last Medical Application</span>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 form-group">
+                                            <label for="LastApplication">Date of last medical application</label>
+                                            <div class="input-group" id="LastApplication">
+                                                <input type="text"
+                                                    class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="form-check checkboxList  mt-3">
+                                                <input class="form-check-input" type="checkbox" id="LastApplicationDate"
+                                                    onchange="applicationStatus()" required>
+                                                <label for="LastApplicationDate">
+                                                    <span class="symptoms">No perior application</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hr_section">
+                                        <span class="hr_content">17. Current Medication</span>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="symptoms">Do you currently use any medication (Prescription
+                                                    or
+                                                    Nonprescription) ?</span>
+                                            </div>
+                                            <div class="d-flex">
+                                                <div class="Mobileq">
+                                                    <input id="CM_yesBtn" class="btnl btn  yesbtn " type="button"
+                                                        value="Yes" onclick="(CM_Q(this.id))">
+                                                </div>
+                                                <div class="Mobileq">
+                                                    <input id="CM_NoBtn" class="btnl btn  yesbtn" type="button"
+                                                        value="No" onclick="(CM_Q(this.id))">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="">
+                                            <div class="col-lg-12 mt-3">
+                                                <div id="CM_block">
+                                                    <label>If yes give name, purpose, dosage and frequency:
+                                                    </label>
+                                                    <input id="CM_A" type="text" class="form-control " required>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Other Medical Information</span>
+                                    </div>
+                                    <div class="mt-3">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>
+                                                <span class="symptoms">18. Do you have ever use near vision contact
+                                                    Lens(es)
+                                                    while
+                                                    flying ?</span>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <div class="Mobileq">
+                                                    <input id="OM_yesBtn" class="btnl btn  yesbtn " type="button"
+                                                        value="Yes" onclick="OM_Q(id)">
+                                                </div>
+                                                <div class="Mobileq">
+                                                    <input id="OM_NoBtn" class="btnl btn  yesbtn" type="button"
+                                                        value="No" onclick="OM_Q(id)">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form_buttons row mt-5 mb-3">
+                                    <div class="col-lg-6 col-6">
+                                        <a class="link_form  float-start" href="#">Previous</a>
+                                    </div>
+                                    <div class="col-lg-6 col-6">
+                                        <a class="link_form float-end" href="./NewRequestSep3.html">Next</a>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <!-- Main END -->
+
+            </div>
+            <div class="footerPage">
+
+                <div class="footerText text-center pb-5 pt-5">
+                    <div>
+                        © All rights reserved to
+                        &nbsp;
+                        <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                        &nbsp;
+                        General Authority of Civil Aviation
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a target="_blank" style="color: #000;text-decoration: none"
+                            href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a target="_blank" style="color: #000;text-decoration: none"
+                            href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <!-- Libraries end -->
+        <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+        <script src="./libraries/popper/js/popper.js"></script>
+        <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+        <script src="./libraries/slick-1.8.1/slick.js"></script>
+        <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="./libraries/pushymenu/js/pushy.js"></script>
+        <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+        <script src="./libraries/pdf.worker/pdf.js"></script>
+        <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+        <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+        <!-- Libraries end -->
+        <!-- Scripts end -->
+        <script src="./js/main.js"></script>
+        <!-- Scripts end -->
+</body>
+
+</html>

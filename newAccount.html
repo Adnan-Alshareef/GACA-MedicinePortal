@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+
+<body>
+    <div class="PageStructure">
+        <div class="navPage">
+            <!-- Header & Navbar -->
+            <div class="logos">
+                <div class="container logos">
+                    <div class="text_link_component t_op_header">
+                        <div class="tlc_first">
+                            <div class="tlc_text">
+                                <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tlc_last gacalogo">
+                            <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="position: sticky;">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container">
+                        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                            <p class="text-light mt-3 form-control-lg">Welcome Visitor!</p>
+                            <!-- <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a href="Home" class="nav-link">My Drones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Licences" class="nav-link">My Licences</a>
+                        </li>
+                    </ul> -->
+                        </div>
+
+                        <div class="last_header contact_us_op">
+                            <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item navtext text-light "><a href="#">Home</a></li>
+                                    <li class="breadcrumb-item text-light active" aria-current="page">Sign Up</li>
+                                </ol>
+                            </div>
+                        </div>
+
+                        <button class="menu-btn">☰</button>
+                    </div>
+                </nav>
+            </div>
+
+
+            <!-- Pushy Menu -->
+            <nav class="pushy pushy-left">
+                <div class="pushy-content">
+                    <a href="#" class="mobile-x">×</a>
+                    <div id="op-mobile" class="text-center">
+                    </div>
+                    <ul class="mobile-menu">
+                        <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Site Overlay -->
+            <div class="site-overlay"></div>
+        </div>
+        <div class="bodyPage">
+            <!-- Main -->
+            <div id="container" style="background-color: #f5f7f9;">
+                <div class="container" id="main">
+                    <div class="inner_content_dashboard">
+                        <div class="text_link_component">
+                            <div class="tlc_first">
+                                <div class="tlc_text">
+                                    New Account
+                                </div>
+                            </div>
+
+                            <div class="tlc_last d-shadow-none bg-transparent">
+                                <div class="reg_sign">
+                                    Do you have an Account ?
+                                    <a href="">SIGN IN</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class=" inner_content_section ">
+
+
+                            <form class="uas_form" action="./02.register.com.en.3.html" novalidate>
+                                <div class="form-group">
+                                    <div class="hr_section">
+                                        <span class="hr_content">Login information</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label>E-mail Address</label>
+                                            <input type="email" class="form-control" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label>Repeat E-mail Address</label>
+                                            <input type="email" class="form-control" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label>Password</label>
+                                            <input type="password" class="form-control" required>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label>Retype Password</label>
+                                            <input type="password" class="form-control" required>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="hr_section">
+                                        <span class="hr_content">Profile Data</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-12 mb-3">
+                                            <label>Gender*</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                        <div class="col-lg-3 col-12 mb-3">
+                                            <label>Tittle*</label>
+                                            <select class="form-select">
+                                                <option selected>Mr.</option>
+                                                <option>Ms</option>
+                                                <option>Mrs</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-12 mb-3">
+                                            <label>Full Name* ( as in Passport or national ID )</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+
+
+                                        <div class="col-lg-6 col-6 ">
+                                            <label>Date*</label>
+                                            <div class="input-group">
+                                                <input type="text"
+                                                    class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    id="dateofissue">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="hr_section">
+                                        <span class="hr_content comp_label">Profile Identification</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <label>Nationalty*</label>
+                                            <select onchange='checkAlert(event)' class="form-select" required>
+                                                <option selected value='Saudi'>Saudi</option>
+                                                <option value='Others'>American</option>
+                                                <option value='Others'>Egyption</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <label>Type of residence*</label>
+                                            <select class="form-select" required>
+                                                <option selected>Saudi</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-12 mb-3">
+                                            <label>ID Type*</label>
+                                            <select class="form-select" required>
+                                                <option selected>1.Saudi Card</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-6 col-6">
+                                            <label>ID Number</label>
+                                            <input type="text" class="form-control" required>
+
+                                        </div>
+                                        <div class="col-lg-6 col-6 ">
+                                            <label>exp Date*</label>
+                                            <div class="input-group">
+                                                <input required type="text"
+                                                    class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    id="dateofissue">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="ddd">
+                                    <div class="hr_section">
+                                        <span class="hr_content">Address</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-12 mb-3">
+                                            <label>Country </label>
+                                            <select class="form-select" required>
+                                                <option selected>Saudi Arabia</option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-12 mb-3">
+                                            <label>region </label>
+                                            <select class="form-select" required>
+                                                <option selected></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-12 mb-3">
+                                            <label>City </label>
+                                            <select class="form-select" required>
+                                                <option selected></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-3 col-12 mb-3">
+                                            <label>District </label>
+                                            <select class="form-select" required>
+                                                <option selected></option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-12 col-12 mb-3">
+                                            <label>Naional Address</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group" id="ccc">
+                                    <div class="hr_section">
+                                        <span class="hr_content">Address</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-3 col-12 mb-3">
+                                            <label>Country </label>
+                                            <select class="form-select" required>
+                                                <option selected>USA</option>
+                                                <option></option>
+                                                <option></option>
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-9 col-12 mb-3">
+                                            <label>Address</label>
+                                            <input type="text" class="form-control" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="hr_section">
+                                        <span class="hr_content comp_label">Disclaimer</span>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                            required>
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            I hereby certify that the information provided in this form is complete,
+                                            true and
+                                            correct to the best of my knowledge. FURTHER, I HEREBY ACKNOWLEDGE that I
+                                            have read
+                                            and understood the Angeles University Foundation (AUF) Privacy Notice and
+                                            agree
+                                            there to as well. I give my consent to AUF to collect, use and process my
+                                            personal
+                                            information. I understand that my consent does not preclude the existence of
+                                            other
+                                            criteria for lawful processing of personal data.
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-center mt-4">
+                                    <div class=" g-recaptcha" data-sitekey="reCAPTCHA_site_key" data-callback='onSubmit'
+                                        data-action='submit'>Submit</div>
+                                </div>
+                                <div class="form_buttons row mt-5 mb-3">
+                                    <div class="col-6  mx-auto">
+                                        <a class="link_form dltbtn float-none proceed_button"
+                                            href="./Registration_RequiredDocuments.html">Cancel</a>
+                                    </div>
+                                    <div class="col-6  mx-auto">
+                                        <a class="link_form linkbgim float-none mr-auto proceed_button"
+                                            href="./Registration_RequiredDocuments.html">Send</a>
+                                    </div>
+                                </div>
+
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main END -->
+
+        </div>
+        <div class="footerPage">
+
+            <div class="footerText text-center">
+                <div>
+                    © All rights reserved to
+                    &nbsp;
+                    <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                    &nbsp;
+                    General Authority of Civil Aviation
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Libraries end -->
+    <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+    <script src="./libraries/popper/js/popper.js"></script>
+    <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+    <script src="./libraries/slick-1.8.1/slick.js"></script>
+    <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./libraries/pushymenu/js/pushy.js"></script>
+    <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+    <script src="./libraries/pdf.worker/pdf.js"></script>
+    <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+    <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+    <!-- Libraries end -->
+    <!-- Scripts end -->
+    <script src="./js/main.js"></script>
+    <!-- Scripts end -->
+</body>
+
+</html>

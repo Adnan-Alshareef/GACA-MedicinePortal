@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+</head>
+
+<body>
+    <!-- Header & Navbar -->
+    <div class="logos">
+        <div class="container logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="tlc_last gacalogo">
+                    <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="./02.home.my.drones.en.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./02.home.my.licences.en.html" class="nav-link">My Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./02.home.my.licences.en.html" class="nav-link">Medical Reports</a>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+                    <p class="d-inline navtext navbar-text m-3">
+                        Welcome Back <span class="navname">Ahmed</span>
+                    </p>
+                    <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+                    <input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">×</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main -->
+    <div id="container" style="background-color: #f5f7f9;">
+        <div class="container" id="main">
+            <div class="inner_content_dashboard">
+                <div class="text_link_component">
+                    <div class="titleheader tlc_first">
+                        <div class="tlc_text">
+                            Home
+                        </div>
+                    </div>
+
+                    <div class="notifucation_Noall tlc_last">
+                        <div class="pt-2">
+                            <span class="notifications_no">2</span>
+                            <div class="notifications_text">New pending medical request</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="inner_content_section ">
+                    <div class="container">
+                        <div class="d-flex">
+                            <div class="section_title">
+                                Latest requests
+                            </div>
+
+                            <div class="newrequest ms-auto">
+                                <div>
+                                    <img src="./images/add_icon.png" alt="">
+                                    <div class="newrequest">New Request</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="DataTables_Table_0_wrapper" class="dataTables_wrapper no-footer">
+                        <table class="CustomTable CustomTable_1 Click_Table_right mt-5 dataTable no-footer"
+                            id="DataTables_Table_0" role="grid">
+
+                            <thead>
+                                <tr data-href="00.inner_request.en.html" role="row">
+                                    <th class="sorting_disabled" rowspan="1" colspan="1"
+                                        style="width: 129.562px; text-align: center;">
+                                        Status.</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 317.469px;">
+                                        Type</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 185.328px;">
+                                        Request No.</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 256.609px;">
+                                        Applicant</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 168.609px;">
+                                        Request Date</th>
+                                    <th class="sorting_disabled" rowspan="1" colspan="1" style="width: 208.422px;">
+                                        Last Update Date</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+
+                                <tr data-href="00.inner_request.en.html" role="row" class="odd">
+                                    <td>
+                                        <div class="status_uas progresss">In Progreess</div>
+                                    </td>
+                                    <td>MC Request</td>
+                                    <td>P.MC 20210055466</td>
+                                    <td>Ahmed Al Anzi</td>
+                                    <td>12/6/2021</td>
+                                    <td>12/6/2021</td>
+                                </tr>
+                                <tr data-href="00.inner_request.en.html" role="row" class="odd">
+                                    <td>
+                                        <div class="status_uas cancellled">cancelled</div>
+                                    </td>
+                                    <td>UAS initial Operator Permit</td>
+                                    <td>P.MD 20210055466</td>
+                                    <td>Saleem Mohamed</td>
+                                    <td>12/6/2021</td>
+                                    <td>12/6/2021</td>
+                                </tr>
+                                <tr data-href="00.inner_request.en.html" role="row" class="odd">
+                                    <td>
+                                        <div class="status_uas active">Active</div>
+                                    </td>
+                                    <td>MC Request</td>
+                                    <td>P.MD 20210055466</td>
+                                    <td>Ahmed Al Anzi</td>
+                                    <td>12/6/2021</td>
+                                    <td>12/6/2021</td>
+                                </tr>
+                                <tr data-href="00.inner_request.en.html" role="row" class="odd">
+                                    <td>
+                                        <div class="status_uas cancellled">cancelled</div>
+                                    </td>
+                                    <td>UAS initial Operator Permit</td>
+                                    <td>P.MD 20210055466</td>
+                                    <td>Saleem Mohamed</td>
+                                    <td>12/6/2021</td>
+                                    <td>12/6/2021</td>
+                                </tr>
+                                <tr data-href="00.inner_request.en.html" role="row" class="odd">
+                                    <td>
+                                        <div class="status_uas active">Active</div>
+                                    </td>
+                                    <td>MC Request</td>
+                                    <td>P.MC 20210055466</td>
+                                    <td>Ahmed Al Anzi</td>
+                                    <td>12/6/2021</td>
+                                    <td>12/6/2021</td>
+                                </tr>
+                                <tr data-href="00.inner_request.en.html" role="row" class="odd">
+                                    <td>
+                                        <div class="status_uas active">Active</div>
+                                    </td>
+                                    <td>MC Request</td>
+                                    <td>P.MC 20210055466</td>
+                                    <td>Ahmed Al Anzi</td>
+                                    <td>12/6/2021</td>
+                                    <td>12/6/2021</td>
+                                </tr>
+                                <tr data-href="00.inner_request.en.html" role="row" class="odd">
+                                    <td>
+                                        <div class="status_uas active">Active</div>
+                                    </td>
+                                    <td>MC Request</td>
+                                    <td>P.MC 20210055466</td>
+                                    <td>Ahmed Al Anzi</td>
+                                    <td>12/6/2021</td>
+                                    <td>12/6/2021</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                    <div class="d-flex pt-3 mb-3">
+                        <div class="ms-auto pt-3 mb-3">
+                            <div class="pt-3">
+                                <div class="newrequest">View all request</div>
+                                <img src="./images/NavigationForward.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!-- Main END -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div>
+                    © All rights reserved to
+                    &nbsp;
+                    <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                    &nbsp;
+                    General Authority of Civil Aviation
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer END -->
+
+
+        <!-- Libraries end -->
+        <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+        <script src="./libraries/popper/js/popper.js"></script>
+        <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+        <script src="./libraries/slick-1.8.1/slick.js"></script>
+        <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="./libraries/pushymenu/js/pushy.js"></script>
+        <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+        <script src="./libraries/pdf.worker/pdf.js"></script>
+        <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+        <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+        <!-- Libraries end -->
+        <!-- Scripts end -->
+        <script src="./js/main.js"></script>
+        <!-- Scripts end -->
+</body>
+
+</html>

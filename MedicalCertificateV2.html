@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="./libraries/selectize/css/selectize.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+
+    <style>
+        .certPages {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+        }
+
+        .certSinglePage {
+            width: 49.8%;
+
+            height: 170mm;
+            padding: 10px;
+        }
+
+        .certmedHeader {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .asideheader {
+            flex: 0 0 calc(100%/3);
+            color: #3e5585;
+            font-family: 'GB';
+            line-height: 12px;
+            font-size: 8px;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .certLogoandBadge {
+            flex: 0 0 32%;
+            text-align: center;
+        }
+
+        .certLogoandBadgeSize {
+            width: 89px !important;
+
+        }
+
+        .certLogoandBadge {
+            flex: 0 0 32%;
+            text-align: center;
+        }
+
+        .certLogoandBadgeSize {
+            width: 89px !important;
+
+        }
+
+        .medicalCert__subheader {
+            color: #006fc6;
+            text-align: center;
+            margin: 10px 0 0px 0;
+            font-size: 1.2rem;
+        }
+
+        .medicalCert__subheader>span {
+            font-family: 'GB';
+        }
+
+        .mainfont {
+            font-family: 'GB';
+        }
+
+        .medicalCert__mainheader {
+            text-align: center;
+            color: #000;
+            font-size: 1rem;
+        }
+
+        .medicalCert__mainheader>span {
+            font-family: 'GB';
+        }
+
+        .certdivider {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+
+        }
+
+        .certdivider>div {
+            width: 50%;
+            border: 2px solid #000000;
+
+            padding: 10px 20px;
+        }
+
+
+        .subcolor {
+            color: #2685cf;
+
+        }
+
+        .maintext {
+            font-family: 'GB';
+            color: #000;
+        }
+
+        .mainfont {
+            font-family: 'GB';
+
+        }
+
+        .pargraph {
+            line-height: 20px;
+            /*
+      padding: 30px 0;
+    */
+            padding: 5px 0 !important;
+        }
+
+        .tclassv2 {
+            line-height: 12px;
+            padding: 10px 0 !important;
+            font-size: .8rem;
+        }
+
+        .LimitaionsList {
+            font-family: "Greta Arabic AR + LT";
+
+            font-size: .9rem;
+            line-height: 19px;
+        }
+
+        .consection_parspace {
+            padding: 10px 0;
+        }
+
+        .consection__pardetails {
+            font-size: 16px;
+            font-family: "Greta Arabic AR + LT";
+        }
+
+
+
+        .dataSection {
+            line-height: 15px;
+            padding: 0 0 10px !important;
+        }
+
+        table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse !important;
+
+        }
+
+        th,
+        td {
+            border: 1px solid black !important;
+            text-align: center;
+            padding: 0 !important;
+            width: 20% !important;
+        }
+
+        th {
+            background-color: #e9f5ff !important;
+            font-weight: 500;
+            font-family: "Greta Arabic AR + LT";
+        }
+
+        td {
+            font-family: 'GB';
+        }
+
+        .signatureSection {
+            display: flex;
+        }
+
+        .signatureSection>div {
+            width: 50%;
+        }
+
+        .conanisu {
+            font-size: 16px;
+            font-family: "Greta Arabic AR + LT";
+        }
+
+        .printbtn {
+            display: inline-block;
+            margin: 0 0 0 auto !important;
+            margin-left: auto !important;
+            background-color: #0075c9;
+            color: #FFF;
+            font-family: 'GB';
+            padding: 2px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            transition: all .6s;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            transform: translateY(-1.5rem);
+        }
+
+        .printbtnholder {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        .printbtn:hover {
+            background-color: #13326c;
+            transition: all .6s;
+            box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            transform: translateY(-1.1rem);
+        }
+
+        .printbtn:active {
+            -webkit-box-shadow: none;
+            -moz-box-shadow: none;
+            box-shadow: none;
+            transform: translateY(0);
+        }
+
+        .certTestbtn {
+            border-radius: 10px;
+            padding: 5px 20px;
+            border: .5px solid #0075c9;
+            color: #0075c9;
+            background-color: #fff;
+            font-size: 20px;
+            font-family: 'GB';
+            transition: all .3s;
+        }
+
+        .certTestbtn:hover {
+            transition: all .3s;
+            background-color: #274479;
+            color: #fff
+        }
+
+        hr.dottedDiv {
+            display: none;
+            border-top: 2px dotted #000;
+        }
+
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        @media print {
+            * {
+                font-size: 10px !important;
+
+            }
+
+            html,
+            body {
+                width: 210mm;
+                height: 297mm;
+
+            }
+
+            .certPages {
+                margin: 20px 0px;
+                padding: 0 20px;
+            }
+
+            .controlNumber {
+                padding: 0 20px;
+            }
+
+            .certSinglePage {
+
+                border: 1px solid #000;
+
+            }
+
+            .certSinglePage {
+                height: 120mm;
+
+            }
+
+            /* ... the rest of the rules ... */
+            .navPage {
+                display: none;
+            }
+
+            .footerPage {
+                display: none;
+            }
+
+            .headertitle {
+                display: none;
+            }
+
+            .alert {
+                display: none;
+            }
+
+            .inner_content_section {
+                padding: 0;
+
+                margin: 0 !important;
+
+            }
+
+            .printbtnholder {
+                display: none;
+            }
+
+            .alertOfCert {
+                display: none;
+            }
+
+            hr.dottedDiv {
+                display: block;
+
+            }
+
+            .certdivider>div {
+                padding: 5px 3px !important;
+            }
+
+            .dataSection {
+                line-height: 10px;
+                padding: 0 !important;
+            }
+
+            li {
+                line-height: 10px;
+            }
+        }
+    </style>
+
+    <!-- Styles end -->
+
+</head>
+
+
+
+
+<body>
+    <div class="PageStructure">
+        <div class="navPage">
+            <div class="logos">
+                <div class="container logos">
+                    <div class="text_link_component t_op_header">
+                        <div class="tlc_first">
+                            <div class="tlc_text">
+                                <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="tlc_last gacalogo">
+                            <!-- <div class="op">
+                                <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                                <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                                <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active ">
+                                <a href="#" class="nav-link">Open Requests</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a href="#" class="nav-link">Request</a>
+                            </li>
+                        </ul>
+                        <div class="ms-auto">
+                            <div class="d-inline-flex m-5">
+                                <div class="notificaationbadge">2</div>
+                                <div class="notificaationCaption">New Open Requests</div>
+                            </div>
+                            <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+                            <input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+                        </div>
+                    </div>
+
+                    <button class="menu-btn">☰</button>
+                </div>
+            </nav>
+            <!-- Pushy Menu -->
+            <nav class="pushy pushy-left">
+                <div class="pushy-content">
+                    <a href="#" class="mobile-x">×</a>
+                    <div id="op-mobile" class="text-center">
+                    </div>
+                    <ul class="mobile-menu">
+                        <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                        <li><a href="#">Homepage</a></li>
+                        <li><a href="#">Open Requests</a></li>
+                        <li><a href="#">Request</a></li>
+                        <li><a href="#">Contact Us</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+            <!-- Site Overlay -->
+            <div class="site-overlay"></div>
+        </div>
+        <div class="bodyPage">
+
+
+            <!-- Main -->
+            <!--
+<div class="btn2top">
+        <a href="#page-top" class="sticky-btn">
+            Save
+            <div>dd</div>
+        </a>
+    </div>
+    -->
+
+            <div class="container">
+                <div class="container alert alert-warning fade show alertOfCert" role="alert" style="margin-top:3rem">
+                    Please print the below certificate and sign it, then make sure to <strong>upload the signed
+                        document</strong> to the system using the <strong>Upload Signed Certificate</strong> button
+                    below.
+                </div>
+                <div class=" headertitle row mt-5">
+                    <div class="col-lg-6">
+                        <div class="tlcAd_text mt-4">
+                            Task Details
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="mt-4">
+                            <div class="d-flex flex-row-reverse">
+                                <div class="px-5">
+
+                                    <input class="certTestbtn mx-2" type="button" value="Upload Signed Certificate"
+                                        data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="inner_content_section">
+                    <div class="certPages">
+                        <div class="certSinglePage">
+                            <div class="certmedHeader mtp-4">
+                                <div class="asideheader">
+                                    Kingdom of Saudi Arabia <br>
+                                    General Authority of Civil Aviation <br>
+                                    Aviation Medicine
+
+                                </div>
+                                <div class="certLogoandBadge">
+                                    <img class="certLogoandBadgeSize" src="./images/Vision.svg" alt="GACA Logo"
+                                        style="width: 50px; height: 50px;">
+                                </div>
+                                <div class="certLogoandBadge">
+                                    <img src="./images/GACA_MdLogo.png" alt="GACA Logo"
+                                        style="width: 50px; height: 50px;">
+                                </div>
+                            </div>
+                            <div class="medicalCert__subheader mtp-1">
+                                Medical Certificate: <span> Class 4</span>
+                            </div>
+                            <div class="medicalCert__mainheader mtp-1">
+                                Certificate No.: <span> 52202587</span>
+                            </div>
+                            <div class="certdivider mtp-2">
+                                <div>
+                                    <div class="dataSection">
+                                        <div class="subcolor mainfont">Name of Holder: </div>
+                                        <div class="maintext">Adnan ALi Alshareef</div>
+                                    </div>
+                                    <div class="dataSection">
+                                        <div class="subcolor mainfont">Date of Birth:</div>
+                                        <div class="maintext">14/5/1977</div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="dataSection">
+                                        <div class="subcolor mainfont">Address</div>
+                                        <div class="maintext">25 Alawani street, Nozha District</div>
+                                        <div class="maintext">Jeedah</div>
+                                        <div class="maintext">Sudi Arabia</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="personalinfo">
+                                <thead>
+                                    <tr>
+                                        <th>Height (cm)</th>
+                                        <th>Weight (kg)</th>
+                                        <th>Hair</th>
+                                        <th>Eyes</th>
+                                        <th>Sex</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>192</td>
+                                        <td>82</td>
+                                        <td>Brown</td>
+                                        <td>Black</td>
+                                        <td>Male</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="maintext tclassv2 mtp-2">
+                                Has met medical standards prescribed in GACAR § 67, for this class of medical
+                                certificate.
+                            </div>
+                            <div class="subcolor mainfont">
+                                Limitaions
+                            </div>
+                            <div class="LimitaionsList">
+                                <ol class="limtinsiderlist">
+                                    <li>Understand that the issuances of a medical certificate by an Aviation</li>
+                                    <li>Comply with validity standards specified for medical certificates</li>
+                                    <li>Comply with the standards relating to prohibitions</li>
+                                    <li>Understand that the issuances of a medical certificate by an Aviation</li>
+                                    <li>Comply with validity standards specified for medical certificates</li>
+                                    <li>Comply with the standards relating to prohibitions</li>
+
+                                </ol>
+                            </div>
+                            <div class="certdivider">
+                                <div class="certexm">
+                                    <div class="dataSection">
+                                        <div class="subcolor mainfont">Aviation Medical Examiner</div>
+                                        <div class="maintext">Mark Robertson</div>
+                                    </div>
+
+                                </div>
+                                <div class="certexm">
+                                    <div class="dataSection">
+                                        <div class="subcolor mainfont">Date of Medical Examiner
+                                        </div>
+                                        <div class="maintext">2/8/2022</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pargraph subcolor mtp-2">
+                                AME's Designation Number: <span class="maintext">MD. 2258741254</span>
+                            </div>
+
+                            <div class="signatureSection mbp-3">
+                                <div class="subcolor mainfont mbp-3">
+                                    AME's Signature:
+                                </div>
+                                <div class="subcolor mainfont  mbp-3">
+                                    Airman's Signature:
+                                </div>
+                            </div>
+                        </div>
+                        <div class="certSinglePage">
+                            <div class="printbtnholder">
+                                <input type="button" class="printbtn" onclick="window.print()" value="Print">
+                            </div>
+
+                            <div class="conofissblock  mtp-4">
+
+                                <div class="subcolor conanisu">
+                                    CONDITIONS OF ISSUE
+                                </div>
+                                <div class="pargraph conSection">
+                                    <div class="maintext">
+                                        The holder of this certificate must:
+                                    </div>
+                                    <div class="consection__pardetails">
+                                        1.Have it in his or her personal possession at all times while exercising
+                                        privileges of an airman certificate (GACAR § 61.9, 64.2, 65.43 and 65.71).
+                                    </div>
+                                    <div class="consection_parspace consection__pardetails">
+                                        2.Understand that the issuances of a medical certificate by an Aviation
+                                        Medical
+                                        Examiner may be reversed by GACA within 60 days.
+                                    </div>
+                                    <div class="consection_parspace consection__pardetails">
+                                        3.Comply with validity standards specified for medical certificates (GACAR §
+                                        61.9, 64.2, 65.43 and 65.71).
+                                    </div>
+                                    <div class="consection_parspace consection__pardetails">
+                                        4.Comply with any statement of functional, operational, and/or time
+                                        limitation
+                                        issued as a condition of certification (GACAR § 67.87) (Note: A letter of
+                                        authorization (or SODA) describing any such limitation must be kept with
+                                        this
+                                        certificate at all times while exercising the privileges of an airman
+                                        certificate).
+                                    </div>
+                                    <div class="consection_parspace consection__pardetails">
+                                        5.Comply with the standards relating to prohibitions on operation during
+                                        medical
+                                        deficiency (GACAR § 61.9, 64.2, 65.43 and 65.71).
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="controlNumber">
+                        <span>GACA Form 8500-9</span>
+                        <hr class="dottedDiv">
+                    </div>
+                </div>
+                <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1"
+                    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" style="max-width: 600px;">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Upload Signed Certificate</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="col-12" id="add-button_1">
+                                    <label class="btn add_file_button">+<input type="file" id="file_1"
+                                            onchange="addFilee(this.id)" hidden /></label>
+                                </div>
+                                <div class="upload_file upload_file_1">
+                                </div>
+                                <div class="mt-5 label_file_name label_file_name_1">
+                                </div>
+                            </div>
+
+                            <div class="modal-footer">
+                                <div class="modal-footer__singlebtn">
+                                    <input id="modalSavebtn" class="nsucf" type="button" value="Save">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footerPage mt-5 mb-5">
+
+            <div class="footerText text-center">
+                <div>
+                    © All rights reserved to
+                    &nbsp;
+                    <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                    &nbsp;
+                    General Authority of Civil Aviation
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <!-- Footer END -->
+
+
+    <!-- Libraries end -->
+    <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+    <script src="./libraries/popper/js/popper.js"></script>
+    <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+    <script src="./libraries/slick-1.8.1/slick.js"></script>
+    <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./libraries/pushymenu/js/pushy.js"></script>
+    <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+    <script src="./libraries/pdf.worker/pdf.js"></script>
+    <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+    <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+    <script src="./libraries/selectize/js/selectize.min.js"></script>
+    <!-- Libraries end -->
+    <!-- Scripts end -->
+
+    <script src="./js/main.js"></script>
+
+
+
+
+    <!-- Scripts end -->
+
+</body>
+
+</html>

@@ -1,0 +1,755 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html dir="ltr" lang="en">
+
+
+
+
+
+<head id="head">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GACA - الهيئة العامة للطيران المدني</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./images/favicon/site.webmanifest">
+    
+    <link rel="stylesheet" type="text/css" href="./libraries/bootstrap-5.1.3/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" type="text/css" href="./libraries/slick-1.8.1/slick.css">
+    <link rel="stylesheet" type="text/css" href="./libraries/slick-1.8.1/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./libraries/datatable/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="./libraries/datatable/css/datatable-custom-theme.css">
+    <link rel="stylesheet" type="text/css" href="./libraries/pushymenu/css/pushy.css">
+    <link rel="stylesheet" type="text/css" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" type="text/css" href="./libraries/Magnific-Popup/css/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="./libraries/selectize/css/selectize.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="./fonts/fonts.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.en.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.mobile.css">
+    
+    
+     <script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+     
+     <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+     <script src="./libraries/selectize/js/selectize.min.js"></script>
+     <script src="./libraries/ChartJs/chart.js"></script>
+    
+</head><body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="logos">
+        <div class="container logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</div>
+<div style="position: sticky;z-index: 10;">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                	
+                    
+                    
+                    
+                    
+                    
+                    
+		                <div class="ms-auto">
+		                    <div class="d-inline-flex m-5">
+		                        <div class="notificaationbadge">0</div>
+		                        <div class="notificaationCaption">New notifications</div>
+		                    </div>
+		                    
+		                    
+		                    
+		                    <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE" onclick="location.href='/md/doctor/profile';">
+		                    <form id="logoutForm" style="display: inline-flex !important;"action="/md/logout" method="post">
+                        		<input type="hidden" name="_csrf" value="faba790f-f4cf-4a27-bc4f-3942330949c8"/>
+		                    	<input class="loginbtn btn" type="submit" value="SIGN OUT" onclick="location.href='/md/logout';">
+		                    </form>
+		                </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+
+				
+
+                <button class="menu-btn">&#9776;</button>
+            </div>
+        </nav>
+</div>
+
+<nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">x</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+            
+            	
+
+                
+                
+                
+                
+                
+                	<li ><a href="/md/doctor/profile">MY PROFILE</a></li>
+                	<li><a href="javascript:;" onclick="document.getElementById('logoutForm').submit();">SIGN OUT</a></li>
+                
+                
+	            
+ 
+                
+                
+                
+
+            </ul>
+        </div>
+</nav>
+
+<div class="site-overlay"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<div class="container-sm">
+		        
+		        <div class="row">
+		            <div class="col-lg-6">
+		                <div class="tlcAd_text mt-4">
+		                    <img src="./images/RequestInfoXs.png" alt="">
+		                    Request Details
+		                </div>
+		            </div>
+		            <div class="col-lg-6">
+		                <div class="ms-auto" style="width: 25%;">
+		                    <div class=" tlcAd_text mt-4 ms-auto">
+		                        <span class="toot">
+		                            <a class="toot" href="#" onclick="history.back()">Go Back <img src="./images/rightArrow.png" alt=""></a>
+		                        </span>
+		                    </div>
+		                </div>
+		
+		            </div>
+		        </div>
+                
+                <div class="inner_content_section">
+                    <div class="container">
+                    	<div class="row">
+		                    <div class="col-lg-6">
+		                        <div class="Request_No">
+		                            Request Number <span>AME.2023.0005009</span>
+		                            <div class="NrStatus NrStatusinline">
+		                                
+											
+											
+												<div class="missingstatus"><div>NEED INFO</div></div>
+											
+											
+											
+											
+										
+		                            </div>
+
+		                        </div>
+		                    </div>
+		                </div>
+		                
+		                <br><br>
+		                
+		                <div class="row">
+		                	<div class="col-md-3">
+		                        <label class="medicalLabel">Type</label>
+	                    		<div class="detail_data">AME Initial Designation</div> 
+		                    </div>
+		                    <div class="col-md-3">
+		                        <label class="medicalLabel">Email</label>
+		                        <div class="detail_data">test36@test.fr</div>
+		                    </div>
+		                    <div class="col-md-3">
+		                        <label class="medicalLabel">Request Date</label>
+		                        <div class="input-group ">
+		                        	
+		                            <div class="detail_data">07/06/2023</div>
+		                        </div>
+		                    </div>
+		                    <div class="col-md-3">
+		                        <label class="medicalLabel">Status Date</label>
+		                        <div class="input-group ">
+		                        	
+		                            <div class="detail_data">09/07/2023</div>
+		                        </div>
+		                    </div>
+		                </div>
+		                
+		                <div class="form-group">
+                            <div class="hr_section">
+                                <span class="hr_content">Doctor Information</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-12 mb-3">
+                                    <label>Gender</label>
+                                    <select class="form-select" disabled>
+                                        <option selected>
+                                        	
+                                        		Male
+                                        		
+                                        	
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-12 mb-3">
+                                    <label>Title</label>
+                                    <select class="form-select" disabled>
+                                    	<option selected>
+	                                    	
+	                                        		Mr.
+	                                        		
+	                                        		
+	                                        
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-3">
+                                    <label>Full Name ( as in Passport or national ID )</label>
+                                    <input type="text" class="form-control" disabled value="FAHAD HAMOUD AHMED ALSHELALI">
+                                </div>
+
+
+                                <div class="col-lg-6 col-6 ">
+                                    <label>Birth Date</label>
+                                    
+                                    <div class="input-group">
+                                        <input type="text" disabled class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground" 
+                                        value="28/11/1991">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="hr_section">
+                                <span class="hr_content comp_label">Doctor Identification</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-6 col-12 mb-3">
+                                    <label>Nationality</label>
+                                    <select class="form-select" disabled>
+										<option>Saudi Arabia</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 col-12 mb-3">
+                                    <label>ID Type</label>
+                                    <select class="form-select" disabled>
+                                    	<option>
+                                    	
+                                    		Saudi National ID
+                                    		
+                                    		
+                                    		
+                                    	
+                                    	</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 col-6">
+                                    <label>ID Number</label>
+                                    <input type="text" class="form-control" disabled value="1085149495">
+                                </div>
+                                <div class="col-lg-6 col-6 ">
+                                    <label>Exp Date</label>
+                                    <div class="input-group">
+                                    	
+                                        <input type="text" class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground" disabled 
+                                        value="08/07/2026">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group" id="ddd">
+                            <div class="hr_section">
+                                <span class="hr_content">Address</span>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-12 mb-3">
+                                    <label>Country</label>
+                                    <select class="form-select" disabled>
+										<option>Bahrain</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-3 col-12 mb-3">
+                                    <label>Region</label>
+                                    <input type="text" class="form-control" value="Manama" disabled>
+                                </div>
+                                <div class="col-lg-3 col-12 mb-3">
+                                    <label>City</label>
+                                    <input type="text" class="form-control" value="Manama" disabled>
+                                </div>
+                                <div class="col-lg-3 col-12 mb-3">
+                                    <label>District</label>
+                                    <input type="text" class="form-control" value="Adliya" disabled>
+                                </div>
+                                <div class="col-lg-12 col-12 mb-3">
+                                    <label>Address Details (Building Number, Street, ...)</label>
+                                    <input type="text" class="form-control" value="52 Abubakr avenue" disabled>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                        <div class="hr_section">
+                            <span class="hr_content">Practice Information</span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label class="medicalLabel">Medical Organization</label>
+                                <input type="text" value="SGH" class="form-control" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="medicalLabel">Opening Days/Hours</label>
+                                <textarea class="form-control" cols="30" rows="4" required>NA</textarea>
+                            </div>
+                            <div class="FormSubTitle col-md-12 mb-3">
+                                Practice Address
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="medicalLabel">Country</label>
+                                <select class="form-select" required>
+									<option>Bahrain</option>
+                                </select>
+                            </div>
+                            <div class="col md 3 mb-3">
+                                <label class="medicalLabel">Region</label>
+                                <input type="text" value="Manama" class="form-control" required>
+                            </div>
+                            <div class="col md 3 mb-3">
+                                <label class="medicalLabel">City</label>
+                                <input type="text" value="Manama" class="form-control" required>
+                            </div>
+                            <div class="col md 3 mb-3">
+                                <label class="medicalLabel">District</label>
+                                <input type="text" value="Adliya" class="form-control" required>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="medicalLabel">Address</label>
+                                <input type="text" value="13 King Fahd road" class="form-control" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="optional_label">Zip Code</label>
+                                <input type="text" value="" class="form-control" >
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="optional_label">PO Box</label>
+                                <input type="text" value="" class="form-control" >
+                            </div>
+
+                            <div class="FormSubTitle col-md-12 mb-3">
+                                Practice Contact
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="optional_label">Email</label>
+                                <input type="email" class="form-control" value="test36@test.fr" >
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="optional_label">Telephone</label>
+                                <input type="text" class="form-control" value="" >
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="medicalLabel">Mobile</label>
+                                <input type="text" class="form-control" value="0532659855" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="optional_label">Fax</label>
+                                <input type="text" class="form-control" value="" >
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="optional_label">After Hours Contact</label>
+                                <input type="text" class="form-control" value="" >
+                            </div>
+                        </div>
+                        </div>
+                        
+                        <div class="form-group">
+                        <div class="hr_section">
+                            <span class="hr_content">Health Specialization</span>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="medicalLabel">Health Practice License</label>
+                                <input type="text" class="form-control" value="3265985577" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="medicalLabel">Degree</label>
+                                <input type="text" class="form-control" value="Doctor" required>
+                            </div>
+                            <div class="col-md-9 mb-3">
+                                <label class="medicalLabel">Medical School
+                                </label>
+                                <input type="text" class="form-control" value="NA" required>
+                            </div>
+                            <div class="col-md-3 mb-3">
+                                <label class="medicalLabel">Graduation Year</label>
+                                <input type="text" class="form-control" value="1999" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="medicalLabel">Internship, Post-Graduate and Specialist Training</label>
+                                <textarea class="form-control" name="training" cols="30" rows="4" required>NA</textarea>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="medicalLabel">Experience in Aviation Medicine</label>
+                                <textarea class="form-control" name="experience" cols="30" rows="4" required>NA</textarea>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="medicalLabel">Affiliation(s) with Aviation Medicine Organizations</label>
+                                <textarea class="form-control" name="affiliation" cols="30" rows="4" required>NA</textarea>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="medicalLabel">Attendance of aviation medical scientific meetings in the last three years (Please mention the date and the country):</label>
+                                <textarea class="form-control" name="attendance" cols="30" rows="4" required>NA</textarea>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                                <label class="medicalLabel">Current job description and duties:</label>
+                                <textarea class="form-control" name="job" cols="30" rows="4" required>NA</textarea>
+                            </div>
+                        </div>
+                        
+                        </div>
+                        
+                        <div class="hr_section">
+                            <span class="hr_content">Required Documents</span>
+                        </div>
+                        
+                        
+			            
+			            
+			            <div class="row">
+                        	<div class="container alert alert-info fade show" role="alert">
+								All the requested documents need to be attached, should be pdf or image and less than 10 megabytes.
+							</div>
+                            <div class="requiredCaption col-md-8 mt-3">
+                                Primary Medical Specialty
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="d-flex w-100 justify-content-end justify-content-sm-center smfile">
+                                    <div class="ms-md-auto">
+                                        <div class="removehMedicalFile" id="removeDiv_1" style="display:none;">
+                                            <label id="removeButton_1"
+                                                onclick="removeFile(this.id)">Remove</label>
+                                            <input type="button">
+                                        </div>
+                                    </div>
+                                    <div class="ms-md-auto">
+                                        <div class="attachMedicalFile" id="attachDiv_1">
+                                            <label for="inputFile_1">Attach</label>
+                                            <input type="file" id="inputFile_1" name="FIRST_MEDICAL_QUALIFICATION" onchange="uploadFile(this.id)" accept="application/pdf,image/jpeg,image/png" required>
+                                        </div>
+                                        <div id="spanFile_1" class="spanFile"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requiredCaption col-md-8 mt-3">
+                                Secondary Medical Specialties
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="d-flex w-100 justify-content-end justify-content-sm-center smfile">
+                                    <div class="ms-md-auto">
+                                        <div class="removehMedicalFile" id="removeDiv_2" style="display:none;">
+                                            <label id="removeButton_2"
+                                                onclick="removeFile(this.id)">Remove</label>
+                                            <input type="button">
+                                        </div>
+                                    </div>
+                                    <div class="ms-md-auto">
+                                        <div class="attachMedicalFile" id="attachDiv_2">
+                                            <label for="inputFile_2">Attach</label>
+                                            <input type="file" id="inputFile_2" name="HIGHER_MEDICAL_QUALIFICATION" onchange="uploadFile(this.id)" accept="application/pdf,image/jpeg,image/png" required>
+                                        </div>
+                                        <div id="spanFile_2" class="spanFile"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requiredCaption col-md-8 mt-3">
+                            	Saudi commission for health specialties registration (or equivalent for physicians practice outside Saudi Arabia)
+                            </div>
+                           <div class="col-md-4 mt-3">
+                                <div class="d-flex w-100 justify-content-end justify-content-sm-center smfile">
+                                    <div class="ms-md-auto">
+                                        <div class="removehMedicalFile" id="removeDiv_3" style="display:none;">
+                                            <label id="removeButton_3"
+                                                onclick="removeFile(this.id)">Remove</label>
+                                            <input type="button">
+                                        </div>
+                                    </div>
+                                    <div class="ms-md-auto">
+                                        <div class="attachMedicalFile" id="attachDiv_3">
+                                            <label for="inputFile_3">Attach</label>
+                                            <input type="file" id="inputFile_3" name="SAUDI_COMMISSION_REGISTRATION" onchange="uploadFile(this.id)" accept="application/pdf,image/jpeg,image/png" required>
+                                        </div>
+                                        <div id="spanFile_3" class="spanFile"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requiredCaption col-md-8 mt-3">
+                                Aviation Medicine Training
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="d-flex w-100 justify-content-end justify-content-sm-center smfile">
+                                    <div class="ms-md-auto">
+                                        <div class="removehMedicalFile" id="removeDiv_4" style="display:none;">
+                                            <label id="removeButton_4"
+                                                onclick="removeFile(this.id)">Remove</label>
+                                            <input type="button">
+                                        </div>
+                                    </div>
+                                    <div class="ms-md-auto">
+                                        <div class="attachMedicalFile" id="attachDiv_4">
+                                            <label for="inputFile_4">Attach</label>
+                                            <input type="file" id="inputFile_4" name="TRAINING_CERTIFICATE" onchange="uploadFile(this.id)" accept="application/pdf,image/jpeg,image/png" required>
+                                        </div>
+                                        <div id="spanFile_4" class="spanFile"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="requiredCaption col-md-8 mt-3">
+                                Identification Card Number
+                            </div>
+                            <div class="col-md-4 mt-3">
+                                <div class="d-flex w-100 justify-content-end justify-content-sm-center smfile">
+                                    <div class="ms-md-auto">
+                                        <div class="removehMedicalFile" id="removeDiv_5" style="display:none;">
+                                            <label id="removeButton_5"
+                                                onclick="removeFile(this.id)">Remove</label>
+                                            <input type="button">
+                                        </div>
+                                    </div>
+                                    <div class="ms-md-auto">
+                                        <div class="attachMedicalFile" id="attachDiv_5">
+                                            <label for="inputFile_5">Attach</label>
+                                            <input type="file" id="inputFile_5" name="ID_DOCUMENT" onchange="uploadFile(this.id)" accept="application/pdf,image/jpeg,image/png" required>
+                                        </div>
+                                        <div id="spanFile_5" class="spanFile"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+			            
+			            
+			            
+			            <div class="w-100 d-flex justify-content-center mt-5">
+	                        <div class="form_buttons">
+	                            <div>
+	                                <a class="link_form float-end" href="/md/doctor/ame/request/initial/edit?requestId=174667">EDIT</a>
+	                            </div>
+	                        </div>
+                    	</div>
+			            
+                    </div>
+                </div>
+                
+                
+                <!-- Modal -->
+                <div class="modal fade" id="notesModal" tabindex="-1" aria-labelledby="notesModalLabel" aria-hidden="true">
+		            <div class="modal-dialog modal-md ">
+		                <div class="modal-content custome-border">
+		                    <div class="modal-header border-0">
+		                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		                    </div>
+		                    <div class='col-lg-12 mb-5'>
+		                        <div class="text-center">
+		                            <div class="tlc_textva" style='text-align:center'> 
+		                            	<img src="./images/Shape 6.png" alt="">
+		                            	<span style="margin-left: 20px;">???note.request.notes???</span>
+		                            </div>
+		                        </div>
+		                    </div>
+		                    <div class="RequestsNotesHolderPage">
+		                        <div class="container RequestsNotesMainPage">
+			                        
+			                        	<div class="d-flex w-100 justify-content-between">
+			                                <div class="RequestsNotesMessageBy mt-3 ">Fahad Al-Khaibari</div>
+			                                
+			                                <div class="medicalLabel mt-3 ">07/06/2023 05:40 PM</div>
+			                            </div>
+			                            <div class="RequestsNotesMessageSection">
+			                                please update the documents
+			                            </div>
+			                        
+			                        	<div class="d-flex w-100 justify-content-between">
+			                                <div class="RequestsNotesMessageBy mt-3 ">Fahad Al-Khaibari</div>
+			                                
+			                                <div class="medicalLabel mt-3 ">09/07/2023 05:20 PM</div>
+			                            </div>
+			                            <div class="RequestsNotesMessageSection">
+			                                please correct your data
+			                            </div>
+			                        
+		                        </div>
+		                    </div>
+		                    <form class="container" id="addNoteFrom" action="" method="POST">
+		                    	
+		                        <input type="text" name="comment" class="RequestsNotesTypearea p-3 form-control" placeholder="Write a note .." maxlength="1000" required>
+		                        <input type="hidden" name="requestId" value="174667"/>
+								<input type="hidden" name="_csrf" value="faba790f-f4cf-4a27-bc4f-3942330949c8"/>
+		                    </form>
+		                    <div class="row border-0 mb-5">
+		                        <div class="col-lg-6 mt-3">
+		                            <div class="pupupSubmit ">
+		                            	
+		                                <input type="submit" value="Send Note" form="addNoteFrom">
+		                            </div>
+		                        </div>
+		                        <div class="col-lg-6 mt-3">
+		                            <div class="pupupCancel">
+		                            	
+		                                <input type="button" value="Cancel" data-bs-dismiss="modal">
+		                            </div>
+		                        </div>
+		                    </div>
+		                </div>
+		            </div>
+		        </div>
+         
+</div>
+
+
+
+
+
+
+
+
+
+ <footer>
+ 	<div class="container">
+ 		<div>
+                © All rights reserved to
+                &nbsp;
+                <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                &nbsp;
+                General Authority of Civil Aviation
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" style="color: #000;text-decoration: none" href="https://gaca.gov.sa/web/en-gb/page/content-policy">
+                	Privacy Policy
+                </a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" style="color: #000;text-decoration: none" href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">
+                	Secure Usage Policy
+                </a>
+                
+                
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" style="color: #000;text-decoration: none" href="./docs/RegisterInMedicalPortalAsDoctorV1.1.pdf">
+                	AME Guide
+                </a>
+                
+
+
+            </div>
+ 	</div>
+ </footer>
+
+
+
+    <!-- Footer END -->
+
+    <!-- Libraries end -->
+    <script src="./libraries/popper/js/popper.js"></script>
+    <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+    <script src="./libraries/slick-1.8.1/slick.js"></script>
+    <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./libraries/pushymenu/js/pushy.js"></script>
+    
+    <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+    <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+    <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+    <script src="./libraries/pdf.worker/pdf.js"></script>
+    
+    <!-- Libraries end -->
+    <!-- Scripts end -->
+    <script src="./js/main.js"></script>
+    <!-- Scripts end --></body></html>

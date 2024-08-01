@@ -1,0 +1,339 @@
+.certPages {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.certSinglePage {
+    width: 49.8%;
+
+    height: 170mm;
+    padding: 10px;
+}
+
+.certmedHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.asideheader {
+    flex: 0 0 calc(100%/3);
+    color: #3e5585;
+    font-family: 'GB';
+    line-height: 12px;
+    font-size: 8px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.certLogoandBadge {
+    flex: 0 0 32%;
+    text-align: center;
+}
+
+.certLogoandBadgeSize {
+    width: 89px !important;
+
+}
+
+.certLogoandBadge {
+    flex: 0 0 32%;
+    text-align: center;
+}
+
+.certLogoandBadgeSize {
+    width: 89px !important;
+
+}
+
+.medicalCert__subheader {
+    color: #006fc6;
+    text-align: center;
+    margin: 10px 0 0px 0;
+    font-size: 1.2rem;
+}
+
+.medicalCert__subheader>span {
+    font-family: 'GB';
+}
+
+.mainfont {
+    font-family: 'GB';
+}
+
+.medicalCert__mainheader {
+    text-align: center;
+    color: #000;
+    font-size: 1rem;
+}
+
+.medicalCert__mainheader>span {
+    font-family: 'GB';
+}
+
+.certdivider {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.certdivider>div {
+    width: 50%;
+    border: 1px solid #000000;
+
+    padding: 10px 20px;
+}
+
+
+.subcolor {
+    color: #2685cf;
+
+}
+
+.maintext {
+    font-family: 'GB';
+    color: #000;
+}
+
+.mainfont {
+    font-family: 'GB';
+
+}
+
+.pargraph {
+    line-height: 20px;
+    /*
+padding: 30px 0;
+*/
+    padding: 5px 0 !important;
+}
+
+.tclassv2 {
+    line-height: 12px;
+    padding: 10px 0 !important;
+    font-size: .8rem;
+}
+
+.LimitaionsList {
+    font-family: "GL";
+    font-size: .9rem;
+    line-height: 19px;
+}
+
+.consection_parspace {
+    padding: 10px 0;
+}
+
+.consection__pardetails {
+    font-size: 16px;
+    font-family: "GL ";
+}
+
+
+
+.dataSection {
+    line-height: 15px;
+    padding: 0 0 10px !important;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse !important;
+
+}
+
+th,
+td {
+    border: 1px solid black !important;
+    text-align: center;
+    padding: 0 !important;
+    width: 20% !important;
+}
+
+th {
+    background-color: #e9f5ff !important;
+    font-weight: 500;
+    font-family: "GL";
+}
+
+td {
+    font-family: 'GB';
+}
+
+.signatureSection {
+    display: flex;
+}
+
+.signatureSection>div {
+    width: 50%;
+}
+
+.conanisu {
+    font-size: 16px;
+    font-family: "GL";
+}
+
+.printbtn {
+    display: inline-block;
+    margin: 0 0 0 auto !important;
+    margin-left: auto !important;
+    background-color: #0075c9;
+    color: #FFF;
+    font-family: 'GB';
+    padding: 2px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    transition: all .6s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-1.5rem);
+}
+
+.printbtnholder {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.printbtn:hover {
+    background-color: #13326c;
+    transition: all .6s;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-1.1rem);
+}
+
+.printbtn:active {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.certTestbtn {
+    border-radius: 10px;
+    padding: 5px 20px;
+    border: .5px solid #0075c9;
+    color: #0075c9;
+    background-color: #fff;
+    font-size: 20px;
+    font-family: 'GB';
+    transition: all .3s;
+}
+
+.certTestbtn:hover {
+    transition: all .3s;
+    background-color: #274479;
+    color: #fff
+}
+
+hr.dottedDiv {
+    display: none;
+    border-top: 2px dotted #000;
+}
+
+@page {
+    size: A4;
+    margin: 0 !important;
+}
+
+@media print {
+    * {
+        font-size: 10px !important;
+
+    }
+
+    html,
+    body {
+        width: 210mm;
+        height: 297mm;
+
+    }
+
+    .certPages {
+        margin: 20px 0px;
+        padding: 0 20px;
+    }
+
+    .pargraph {
+        line-height: normal;
+        /*
+    padding: 30px 0;
+    */
+        padding: 5px 0 !important;
+    }
+
+    .consection_parspace {
+        padding: 0px 0;
+    }
+
+    .asideheader {
+        font-size: 7px !important;
+    }
+
+    .controlNumber {
+        padding: 0 20px;
+    }
+
+    .certSinglePage {
+
+        border: 1px solid #000;
+
+    }
+
+    .certSinglePage {
+        height: 120mm;
+
+    }
+
+    /* ... the rest of the rules ... */
+    .navPage {
+        display: none;
+    }
+
+    .footerPage {
+        display: none;
+    }
+
+    .headertitle {
+        display: none;
+    }
+
+    .alert {
+        display: none;
+    }
+
+    .inner_content_section {
+        padding: 0;
+
+        margin: 0 !important;
+
+    }
+
+    .printbtnholder {
+        display: none;
+    }
+
+    .alertOfCert {
+        display: none;
+    }
+
+    hr.dottedDiv {
+        display: block;
+
+    }
+
+    .certdivider>div {
+        padding: 5px 3px !important;
+    }
+
+    .dataSection {
+        line-height: 10px;
+        padding: 0 !important;
+    }
+
+    li {
+        line-height: 10px;
+    }
+}

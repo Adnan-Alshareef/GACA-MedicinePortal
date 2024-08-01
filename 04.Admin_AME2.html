@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+
+</head>
+
+<body>
+    <!-- Header & Navbar -->
+    <div class="logos">
+        <div class="container-fluid logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="tlc_last gacalogo">
+                    <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Applicant</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">AMEs</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Certificates</a>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+
+                    <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+                    <input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">×</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main -->
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="tlcAd_text mt-4">
+                    <img src="./images/AMEInfoXs.png" alt="">
+                    Medical Examiner Details
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ms-auto" style="width: 25%;">
+                    <div class=" tlcAd_text mt-4 ms-auto">
+                        <span class="toot">
+                            <a class="toot" href="#">Go Back <img src=".//images/rightArrow.png" alt=""></a>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="inner_content_section">
+
+            <div class="hr_section">
+                <span class="hr_content">Certificate Details</span>
+            </div>
+            <div class=" ccontainer">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="medicalLabel">Date of Issue</label>
+                        <div class="input-group ">
+                            <input type="text"
+                                class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                value="14 / 2 / 2021" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="medicalLabel">Expiry Date</label>
+                        <div class="input-group ">
+                            <input type="text"
+                                class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                value="14 / 2 / 2021" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="medicalLabel">Status</label>
+                        <input type="text" class="form-control" value="Valid" readonly>
+                    </div>
+                    <a href="" class="Showcertificate col-md-3 mt-4">
+                        <div>
+                            View Certificate
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hr_section">
+                <span class="hr_content">AME Information</span>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label class="medicalLabel">Title</label>
+                        <input type="text" class="form-control" value="Mr." readonly>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="medicalLabel">Name</label>
+                        <input class="form-control" type="text" value="Mohamed Abdulrahman Salem Al-Ghamdi" readonly>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="medicalLabel">Expiry Date</label>
+                        <div class="input-group ">
+                            <input type="text"
+                                class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                value="14 / 2 / 2021" readonly>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hr_section">
+                <span class="hr_content">Address</span>
+            </div>
+            <div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <label class="medicalLabel">Country</label>
+                        <select class="form-select  bg-light">
+                            <option value="Saudi Arabia" selected>Saudi Arabia</option>
+                            <option disabled value="Egypt">Egypt</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="medicalLabel">Region</label>
+                        <select class="form-select  bg-light">
+                            <option value="Saudi Arabia" selected>Makkah</option>
+                            <option disabled value="Egypt">Madinah</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="medicalLabel">City</label>
+                        <select class="form-select  bg-light">
+                            <option value="Saudi Arabia" selected>Jeddah</option>
+                            <option disabled value="Egypt">Taif</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="medicalLabel">District</label>
+                        <select class="form-select bg-light">
+                            <option value="Saudi Arabia" selected>Alrehab</option>
+                            <option disabled value="Egypt">Sharafiyah </option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-12 mb-5">
+                    <label class="medicalLabel">National Address</label>
+                    <input class="form-control" type="text" value="14 Salama Distrct 102254 Jeddah" readonly>
+                </div>
+            </div>
+            <div class="hr_section">
+                <span class="hr_content">Practice Information</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 mt-2">
+                    <label class="medicalLabel">Medical Organization</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <label class="medicalLabel">Practice Name</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <label class="medicalLabel">Practice Name</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="FormSubTitle col-md-12 mt-3">
+                    Practice Address
+                </div>
+                <div class="col-md-12 mt-3">
+                    <label class="medicalLabel">Address</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-5">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="medicalLabel">Zip Code</label>
+                            <input type="text" class="form-control" value="" readonly>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="medicalLabel">PO Box</label>
+                            <input type="text" class="form-control" value="" readonly>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <label class="medicalLabel">Country</label>
+                    <select class="form-select bg-light">
+                        <option value="" selected></option>
+                        <option disabled value=""> </option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col md 6">
+                            <label class="medicalLabel">Zip Code</label>
+                            <input type="text" class="form-control" value="" readonly>
+                        </div>
+                        <div class="col md 6">
+                            <label class="medicalLabel">PO Box</label>
+                            <input type="text" class="form-control" value="" readonly>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="FormSubTitle col-md-12 mt-3">
+                    Practice Contact
+                </div>
+                <div class="col-md-6 mt-2">
+                    <label class="medicalLabel">Name</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-6 mt-2">
+                    <label class="medicalLabel">Email</label>
+                    <input type="email" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-3 mt-2">
+                    <label class="medicalLabel">Telephone</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-3 mt-2">
+                    <label class="medicalLabel">Mobile</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-3 mt-2">
+                    <label class="medicalLabel">Fax</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-3 mt-2">
+                    <label class="medicalLabel">After Hours Contact</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="FormSubTitle col-md-12 mt-3">
+                    Published Information
+                </div>
+                <div class="col-md-3 mt-3">
+                    <label class="medicalLabel">Published Practice Tel. No.
+                    </label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <label class="medicalLabel">Published Mobile Phone No.
+                    </label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <label class="medicalLabel">Published Practice Fax No.
+                    </label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-3 mt-3">
+                    <label class="medicalLabel">Published E-Mail</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label class="medicalLabel">After hours contact detail</label>
+                    <input type="text" class="form-control" readonly value="">
+                </div>
+                <div class="col-md-3 mt-3">
+                    <label class="medicalLabel">Gender</label>
+                    <input type="text" class="form-control" readonly value="">
+                </div>
+                <div class="col-md-3 mt-3">
+                    <label class="medicalLabel">Country (if not saudi)</label>
+                    <input type="text" class="form-control" readonly value="">
+                </div>
+            </div>
+            <div class="hr_section">
+                <span class="hr_content">Health Specialization</span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label class="medicalLabel">Health Specialities No</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-6">
+                    <label class="medicalLabel">Degree</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-8">
+                    <label class="medicalLabel">Medical School
+                    </label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-4">
+                    <label class="medicalLabel">Year</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-check checkboxList mt-3">
+                        <input class="form-check-input" type="checkbox" checked>
+                        <label>
+                            <span class="symptoms">Class 1</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-check checkboxList mt-3">
+                        <input class="form-check-input" type="checkbox">
+                        <label>
+                            <span class="symptoms">Class 1</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="form-check checkboxList mt-3">
+                        <input class="form-check-input" type="checkbox">
+                        <label>
+                            <span class="symptoms">Class 1</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <label class="medicalLabel">Internship, Post-Graduate and Specialist Training</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-6 mt-3">
+                    <label class="medicalLabel">Experience in Aviation Medicine</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-12 mt-3">
+                    <label class="medicalLabel">Affiliation(s) with Aviation Medicine Organizations</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-12 mt-3">
+                    <label class="medicalLabel">Attendance of aviation medical scientific meetings in the last three
+                        years (Please mention the date and the country):</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+                <div class="col-md-12 mt-3">
+                    <label class="medicalLabel">Current job description and duties:</label>
+                    <input type="text" class="form-control" value="" readonly>
+                </div>
+            </div>
+            <div class="hr_section">
+                <span class="hr_content">Required Documents</span>
+            </div>
+            <table class="visitTable">
+                <thead>
+                    <tr>
+                        <th>File</th>
+                        <th>Type</th>
+                        <th>Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            ID.copy.pdf
+                        </td>
+                        <td>
+                            PDF
+                        </td>
+                        <td>
+                            11/2/2022
+                        </td>
+                        <td>
+                            <div class="viewbtn">
+                                <a href="#">View</a>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Graduation certficate of KAU 2004.pdf
+                        </td>
+                        <td>
+                            PDF
+                        </td>
+                        <td>
+                            11/2/2022
+                        </td>
+                        <td>
+                            <div class="viewbtn">
+                                <a href="#">View</a>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <div class="mt-5">
+                    <div class="d-flex w-100 justify-content-center">
+                        <div class="AmeReq mt-5 mb-5">
+                            <input type="button" value="AME Requests">
+                        </div>
+                        <div class="AmeDeactivate mt-5 mb-5">
+                            <input type="button" value="Deactivate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div>
+                © All rights reserved to
+                &nbsp;
+                <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                &nbsp;
+                General Authority of Civil Aviation
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" style="color: #000;text-decoration: none"
+                    href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" style="color: #000;text-decoration: none"
+                    href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Footer END -->
+
+
+    <!-- Libraries end -->
+    <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+    <script src="./libraries/popper/js/popper.js"></script>
+    <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+    <script src="./libraries/slick-1.8.1/slick.js"></script>
+    <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./libraries/pushymenu/js/pushy.js"></script>
+    <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+    <script src="./libraries/pdf.worker/pdf.js"></script>
+    <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+    <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+    <!-- Libraries end -->
+    <!-- Scripts end -->
+
+    <script src="./js/main.js"></script>
+    <!-- Scripts end -->
+</body>
+
+</html>

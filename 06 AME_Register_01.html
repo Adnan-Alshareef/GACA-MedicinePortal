@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+</head>
+
+<body>
+    <!-- Header & Navbar -->
+    <div class="logos">
+        <div class="container logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="tlc_last gacalogo">
+                    <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="d-flex w-100 justify-content-between">
+                <div class="navbar-text">Welcome <span class="navname">Visitor!</span></div>
+                <div class="navbar-text">Home > <span class="navname">Sign Up</span></div>
+            </div>
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">×</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main -->
+    <div id="container">
+        <div class="container" id="main">
+            <div class="inner_content_dashboard">
+                <div class="text_link_component">
+                    <div class="titleheader tlc_first">
+                        <div class="tlc_text">
+                            Initial AME Designation <span class="requestNo">(FS.MD.08.A.1)</span>
+                        </div>
+                    </div>
+
+                    <div class="notifucation_Noall tlc_last">
+                        <div class="pt-2">
+                            <div class="mediaclLink notifications_text">Do you have an account ? <a href="#">SIGN IN</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="inner_content_section ">
+                    <div>
+                        <div class="hr_section">
+                            <span class="hr_content">Instructions</span>
+                        </div>
+                    </div>
+                    <div class="mrInstructions">
+                        <div>
+                            This service allows the beneficiaries to be delegated as aviation medical examiner to issue
+                            airman medical certificates.
+                        </div>
+                        <br>
+                        <div style="font-family: 'GB';">
+                            Required documents:
+                        </div>
+                        <ul>
+                            <li>First medical qualification certificate</li>
+                            <li>Higher medical qualification certificate</li>
+                            <li>Saudi commission for health specialties registration (or equivalent for physicians
+                                practice outside Saudi Arabia)</li>
+                            <li>Aviation medicine training certificate</li>
+                            <li>ID card</li>
+                        </ul>
+
+                        <div>Please refer to GACAR Before submit the request.</div>
+                    </div>
+
+                    <div class="form-check">
+                        <input required class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label for="flexCheckDefault">
+                            <div class="mediaclLink notifications_text"> I Agree on </div>
+                            <a class="mediaclLink" href="#" data-bs-toggle="modal"
+                                data-bs-target="#staticBackdrop">CONDITIONS OF
+                                DESIGNATION AS AN AME</a>
+                        </label>
+                    </div>
+
+                    <div class="w-100 d-flex justify-content-center mt-5">
+                        <div class="form_buttons">
+                            <div>
+                                <a class="link_form float-end" href="./06 AME_Register_02.html">Next</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Button trigger modal -->
+
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class='col-lg-12  mt-5'>
+                                <div class="text-center">
+                                    <div class="tlc_textva" style='text-align:center'> Conditions of Designation as AME
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-body ConditionsAME">
+
+                                <div>1. GACA Designated AME must meet all the requirements of the concerned authorities
+                                    which entitles the physician to practice medicine in Saudi Arabia.</div>
+                                <div>2. An Examiner is a designated representative of the GACA President with important
+                                    duties and responsibilities.
+                                </div>
+                                <div>3. Designated Examiners are delegated to examine applicants for airman medical
+                                    certificates and to issue, defer or deny issuance of certificates.</div>
+                                <div>4. Designees serve the needs of the GACA in fulfilling its safety mission.
+                                </div>
+                                <div>5. Designation is a privilege that conveys responsibilities but does not imply
+                                    employment.</div>
+                                <div>6. The use of acceptable equipment and adequate facilities in order to carry out
+                                    the prescribed examinations; and</div>
+                                <div>7. Designees must be knowledgeable, qualified and competent; so completion of
+                                    training courses is one of the mandatory requirements for designation as an AME for
+                                    GACA to enables them to recognize the hazards of pilot exposure to self-imposed and
+                                    environmental stress factors and unsafe practices during the operation of an
+                                    aircraft that may lead to impairment, incapacitation, or death.
+                                </div>
+                                <div>8. AMEs must transmit medical certificate applications (GACA 8500-8) to GACA
+                                    Aviation Medicine within two weeks from the medical examination date, for our
+                                    assessment and approval of (Airman) Medical Certification. This procedure is
+                                    essential for the continuation of your GACA Designation as Aviation Medical
+                                    Examiner.
+
+                                </div>
+                            </div>
+                            <div class="modal-footer border-0 mb-5">
+                                <div class="w-100 d-flex justify-content-center">
+                                    <div class="pupupSubmit w-100 d-flex justify-content-center">
+                                        <input type="button" value="Close" data-bs-dismiss="modal">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Main END -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div>
+                    © All rights reserved to
+                    &nbsp;
+                    <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                    &nbsp;
+                    General Authority of Civil Aviation
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" style="color: #000;text-decoration: none"
+                        href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- Footer END -->
+
+
+        <!-- Libraries end -->
+        <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+        <script src="./libraries/popper/js/popper.js"></script>
+        <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+        <script src="./libraries/slick-1.8.1/slick.js"></script>
+        <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="./libraries/pushymenu/js/pushy.js"></script>
+        <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+        <script src="./libraries/pdf.worker/pdf.js"></script>
+        <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+        <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+        <!-- Libraries end -->
+        <!-- Scripts end -->
+        <script src="./js/main.js"></script>
+        <!-- Scripts end -->
+</body>
+
+</html>

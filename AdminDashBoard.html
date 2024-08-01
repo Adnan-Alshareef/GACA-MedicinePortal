@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+	<script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+    <script src="./libraries/ChartJs/chart.js"></script>
+</head>
+
+<body>
+    <!-- Header & Navbar -->
+    <div class="logos">
+        <div class="container logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="tlc_last gacalogo">
+                    <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Applicant</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">AMEs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Certificates</a>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+
+                    <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+                    <input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">×</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main -->
+    <div class="container" id="">
+        <div class="tmAme mt-5 mb-3 w-49">
+            Medical Certificate Requests(Initial) Statistics (1)
+        </div>
+        <div class="dashboardgolder mt-2 p-5" style="background-color: #ffff; border-radius: 5%;">
+            <div class="row gx-5">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-3 mb-4">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart1" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Approvedstatus">1</h3>
+                                        <h5 class="dashboardstatus">APPROVED</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart2" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Issuedstatus">0</h3>
+                                        <h5 class="dashboardstatus">ISSUED</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart3" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Rejectedstatus">0</h3>
+                                        <h5 class="dashboardstatus">DENIED</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart4" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat GacaNotestatus">0</h3>
+                                        <h5 class="dashboardstatus">ADDITIONAL INFO</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-lg-3 mb-4">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart5" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat SentToGacastatus">0</h3>
+                                        <h5 class="dashboardstatus">DEFERED</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart6" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Pendingstatus">0</h3>
+                                        <h5 class="dashboardstatus">PENDING</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart7" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Newstatus">0</h3>
+                                        <h5 class="dashboardstatus">NEW</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 mb-4">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart8" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Cancelledstatus">0</h3>
+                                        <h5 class="dashboardstatus">CANCELLED</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 mt-5">
+                    <div style=" background-color: #FFF; padding: 2rem;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                        <canvas height="400" id="barChart1" width="616" style="display: block; width: 616px; height: 400px;" class="chartjs-render-monitor"></canvas>
+                    </div>
+                </div>
+                <div class="col-5 mt-5">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                            <canvas id="pieChart1" width="600" height="400" class="chartjs-render-monitor" style="display: block;"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="tmAme mt-5 mb-3 w-49">
+            AME Requests Statistics (1)
+        </div>
+        <div class="dashboardgolder mt-2 p-5" style="background-color: #ffff; border-radius: 5%;">
+            <div class="row gx-5">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-lg-3 mb-4">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart9" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Approvedstatus">1</h3>
+                                        <h5 class="dashboardstatus">APPROVED</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart10" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Rejectedstatus">0</h3>
+                                        <h5 class="dashboardstatus">REJECTED</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart11" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat MissingInfostatus"></h3>
+                                        <h5 class="dashboardstatus">NEED INFO</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart12" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Pendingstatus">0</h3>
+                                        <h5 class="dashboardstatus">PENDING</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="doughnutchartHolder p-4">
+                                <div class="d-flex align-items-center">
+                                    <div class="me-3"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                                        <canvas style="width: 100px; height: 100px; display: block;" id="chart13" width="150" height="150" class="chartjs-render-monitor"></canvas>
+                                    </div>
+                                    <div>
+                                        <h3 class="dashboardstat Cancelledstatus">0</h3>
+                                        <h5 class="dashboardstatus">CANCELLED</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 mt-5">
+                    <div style=" background-color: #FFF; padding: 2rem;"><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                        <canvas height="400" id="barChart2" width="616" style="display: block; width: 616px; height: 400px;" class="chartjs-render-monitor"></canvas>
+                    </div>
+                </div>
+                <div class="col-5 mt-5">
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div><div class="chartjs-size-monitor"><div class="chartjs-size-monitor-expand"><div class=""></div></div><div class="chartjs-size-monitor-shrink"><div class=""></div></div></div>
+                            <canvas id="pieChart2" width="600" height="400" class="chartjs-render-monitor" style="display: block;"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row p-3">
+                 <div class="col-lg-3 col-12">
+                 	<a class="link_form create_drone_null" href="/md/admin/statistics/export">Export</a>
+                 </div>
+            </div>
+            
+        </div>
+	</div>
+	
+<script>
+$(document).ready(function () {
+doughnutChart('chart1', 1, 1, '#00a886');
+doughnutChart('chart2', 0, 1, '#faa21b');
+doughnutChart('chart3', 0, 1, '#c3404d');
+doughnutChart('chart4', 0, 1, '#274479');
+doughnutChart('chart5', 0, 1, '#9facba');
+doughnutChart('chart6', 0, 1, '#2898e8');
+doughnutChart('chart7', 0, 1, '#f4d006');
+doughnutChart('chart8', 0, 1, '#f36b79');
+
+var labels = ['Class 1','Class 2','Class 3'];
+var data = [1,0,0];
+var backgroundColor = ['#00a886','#f4d006','#f36b79'];
+pieChart('pieChart1', labels, data, backgroundColor);
+barChart('barChart1', 'MC Requests', ["2022","2023"], [15,12], '#274479');
+
+doughnutChart('chart9', 1, 1, '#00a886');
+doughnutChart('chart10', 0, 1, '#c3404d');
+doughnutChart('chart11', 0, 1, '#ffc64d');
+doughnutChart('chart12', 0, 1, '#2898e8');
+doughnutChart('chart13', 0, 1, '#f36b79');
+
+var labelsAme = ['AME Initial Designation','AME Designation Renewal'];
+var dataAme = [1,0];
+var backgroundColorAme = ['#00a886','#f4d006'];
+pieChart('pieChart2', labelsAme, dataAme, backgroundColorAme);
+barChart('barChart2', 'AME Requests', ["2023"], [1], '#274479');
+
+});
+</script>
+	
+    <footer>
+        <div class="container">
+            <div>
+                © All rights reserved to
+                &nbsp;
+                <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                &nbsp;
+                General Authority of Civil Aviation
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" style="color: #000;text-decoration: none"
+                    href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" style="color: #000;text-decoration: none"
+                    href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- Footer END -->
+
+
+    <!-- Libraries end -->
+    
+    <script src="./libraries/popper/js/popper.js"></script>
+    <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+    <script src="./libraries/slick-1.8.1/slick.js"></script>
+    <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./libraries/pushymenu/js/pushy.js"></script>
+    <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+    <script src="./libraries/pdf.worker/pdf.js"></script>
+    <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+    <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+    <!-- Libraries end -->
+    <!-- Scripts end -->
+
+    <script src="./js/main.js"></script>
+    <script>
+
+
+    </script>
+    <!-- Scripts end -->
+</body>
+
+</html>

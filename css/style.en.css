@@ -1,0 +1,257 @@
+* {
+    direction: ltr;
+}
+
+.tlc_image img {
+    padding-right: 20px;
+}
+
+.tlc_link {
+    background: url(../images/link_right_arrow.png) no-repeat 100% 50%;
+    padding-right: 40px;
+}
+
+.tlc_link_add {
+    background: url(../images/add_sign_icon.png) no-repeat 0% 50%;
+    padding-right: 0px;
+    padding-left: 30px;
+}
+
+.tlc_link_edit {
+    background: url(../images/edit_icon.png) no-repeat 0% 50%;
+    padding-right: 0px;
+    padding-left: 30px;
+}
+
+.hr_section {
+    text-align: left;
+}
+
+.hr_content {
+    padding-right: 20px;
+}
+
+
+/* Progress Bar */
+
+.progressbar li {
+    float: left;
+}
+
+
+/* For curvy edges end */
+
+table.dataTable thead th:first-child {
+    border-top-left-radius: 20px;
+}
+
+table.dataTable thead th:last-child {
+    border-top-right-radius: 20px;
+}
+
+table.dataTable tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 20px;
+}
+
+table.dataTable tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 20px;
+}
+
+.Click_Table tbody tr:hover {
+    cursor: pointer;
+    background: #e6f5ff;
+    border-left: 3px solid #0075c9;
+}
+
+.Click_Table_right tbody tr:hover {
+    cursor: pointer;
+    background: #e6f5ff;
+    border-right: 3px solid #0075c9;
+}
+
+
+/* For curvy edges end */
+
+
+/* Custom Checkbox */
+
+.custom_checkbox_button[type="checkbox"]:checked,
+.custom_checkbox_button[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.custom_checkbox_button[type="checkbox"]:checked+label,
+.custom_checkbox_button[type="checkbox"]:not(:checked)+label {
+    position: relative;
+    padding-left: 38px;
+    cursor: pointer;
+    line-height: 30px;
+    display: inline-block;
+    font-family: "GR";
+    margin-top: 10px;
+    font-family: "GR";
+    color: #858990;
+}
+
+.custom_checkbox_button[type="checkbox"]:checked+label:before,
+.custom_checkbox_button[type="checkbox"]:not(:checked)+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.custom_checkbox_button[type="checkbox"]:checked+label:after,
+.custom_checkbox_button[type="checkbox"]:not(:checked)+label:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    /* Fill Color */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.custom_checkbox_button[type="checkbox"].crb_green:checked+label:after,
+.custom_checkbox_button[type="checkbox"].crb_green:not(:checked)+label:after {
+    background: #00a886 url(../images/check.png) 50% 50% no-repeat;
+}
+
+.custom_checkbox_button[type="checkbox"].crb_red:checked+label:after,
+.custom_checkbox_button[type="checkbox"].crb_red:not(:checked)+label:after {
+    background: #ef3a4c url(../images/check.png) 50% 50% no-repeat;
+}
+
+.custom_checkbox_button[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.custom_checkbox_button[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+
+/* Custom Checkbox End */
+
+.send_link {
+    padding-right: 30px;
+}
+
+.instructions_content {
+    padding-right: 20px;
+}
+
+.contact-title {
+    background: url(../images/contact-icon-title.png) no-repeat 0px 50%;
+    padding-left: 60px;
+}
+
+.detail_item {
+    border-left: 2px solid #0075c9;
+    padding-left: 20px;
+}
+
+
+
+.status_missing {
+    background-position: 2% 50%;
+    padding-left: 20px;
+}
+
+.back_link::after {
+    content: '>';
+    padding-left: 10px;
+}
+
+
+
+.search_input {
+    background: #FFF url(../images/zoom_icon.png) 5% 50% no-repeat;
+    padding-left: 45px;
+}
+
+span.new_not {
+    margin-right: 10px;
+}
+
+.print_btn_opt {
+    background: #0075c9 url(../images/print_icon_w.png) no-repeat 15px 50%;
+    padding-left: 25px;
+    margin-right: 25px;
+}
+
+.export_btn_opt {
+    background: #0075c9 url(../images/export_icon.png) no-repeat 15px 50%;
+    padding-left: 25px;
+    margin-right: 10px;
+    border: 0px !important;
+    cursor: pointer;
+}
+
+.export_btn_opt:focus {
+    outline: none;
+}
+
+.export_icon_theme2 {
+    background: #0075c9 url(../images/export_icon_2.png) no-repeat 15px 50%;
+    padding-left: 25px;
+    margin-right: 10px;
+}
+
+.export_icon_theme2:hover {
+    background: #274479 url(../images/export_icon_2.png) no-repeat 15px 50%;
+    padding-left: 25px;
+    margin-right: 10px;
+}
+
+.renew_btn_opt {
+    background: #0075c9 url(../images/renew_icon.png) no-repeat 15px 50%;
+    padding-left: 35px;
+    width: 210px;
+}
+
+.dereg_btn_opt {
+    width: 210px;
+    background: #f36b79 url(../images/deregister_icon.png) no-repeat 15px 50%;
+    padding-left: 35px;
+    margin-right: 30px;
+}
+
+.drone_models_icon {
+    background: #0075c9 url(../images/settings_drone_models_icon.png) no-repeat 15px 50%;
+}
+
+.drone_models_icon:hover {
+    background: #274479 url(../images/settings_drone_models_icon.png) no-repeat 15px 50%;
+}
+
+.optional_label::after {
+    content: ' (Optional)';
+    color: #00a886;
+    font-family: 'GR';
+    font-size: 14px;
+}
+
+.optional_large_label::after {
+    content: ' (Optional)';
+    color: #00a886;
+    font-family: 'GR';
+    font-size: 20px;
+}
+
+.notification_button_alert img {
+    margin-right: 5px;
+}

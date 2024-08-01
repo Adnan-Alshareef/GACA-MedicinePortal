@@ -1,0 +1,1783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <link rel="stylesheet" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+</head>
+
+<body>
+    <!-- Header & Navbar -->
+    <div class="logos">
+        <div class="container-fluid logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="tlc_last gacalogo">
+                    <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Applicant</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">AMEs</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Certificates</a>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+
+                    <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+                    <input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">×</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+                <li><a href="./00_Register_ar.html" class="lang_switcher_button">العربية</a></li>
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">profile</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main -->
+
+    <div class="container-sm">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="tlcAd_text mt-4">
+                    <img src="./images/RequestInfoXs.png" alt="">
+                    Request Details
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ms-auto" style="width: 25%;">
+                    <div class=" tlcAd_text mt-4 ms-auto">
+                        <span class="toot">
+                            <a class="toot" href="#">Go Back <img src=".//images/rightArrow.png" alt=""></a>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="inner_content_section">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="Request_No">
+                            Request No. <span>MD.2022.45221478</span>
+                            <div class="NrStatus NrStatusinline">
+                                <div>New Request</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="requestPanel ms-auto">
+                            <input class="requestPanel_btn" type="button" value="Request Panel">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-5">
+                    <div class="AA alert alert-warning" role="alert">
+                        <strong>Notes</strong>
+                        <div class='all'><span class='BB'>Dr. Mohamed Abdullah ( 14/8/2022 12:55PM )</span><br>
+                            This application needs attention from GACA because of some constarins I found during
+                            examination about vision that could affect slighty night vision .</div>
+
+                        <div class='mt-5'>
+                            <div class='w-100 d-flex'>
+                                <div>
+                                    <input type='button' class='medbtn' value="Replay" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal4">
+                                </div>
+                                <div class='ms-auto cautionLink'>
+                                    <a href='#'>View all notes</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="">
+                        <div class="d-flex w-1000 justify-content-evenly ">
+                            <div class="RequestDetailsDshboard Active" id="RequestDetailsbtn"
+                                onclick="RequestDetailsbtnToggle()">
+                                Request Details
+                            </div>
+                            <div class="RequestDetailsDshboard" id="MedicalDatabtn" onclick="MedicalDatabtnToggle()">
+                                Medical Data
+                            </div>
+                            <div class="RequestDetailsDshboard" id="Limitationsbtn" onclick="LimitationsToogle()">
+                                Limitations
+                            </div>
+                            <div class="RequestDetailsDshboard" id="MedicalEvaluationbtn"
+                                onclick="MedicalEvaluationbtnToogle()">
+                                Medical Evaluation
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="uas_form RequestDetailsbtn" id="AdminRequestDetails">
+                                <div class="form-group">
+                                    <div class="hr_section">
+                                        <span class="hr_content">Application Information</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12  mb-3">
+                                            <label>1. Class of medical services appled for:</label>
+                                            <select class="form-select">
+                                                <option value="" disabled selected>Select</option>
+
+                                            </select>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mb-3">
+                                            <label>2. Name</label>
+                                            <input type="text" class="bg-light form-control" value="Ahmed" readonly>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mb-3">
+                                            <label>Surname</label>
+                                            <input type="text" class="bg-light form-control" value="Abdullah" readonly>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mb-3">
+                                            <label>ID Number</label>
+                                            <input type="text" class="bg-light form-control" value="52225852587">
+                                        </div>
+                                        <div class="col-lg-3 col-12 mb-3">
+                                            <label>3. Date of birth</label>
+                                            <div class="input-group">
+                                                <input type="text"
+                                                    class="bg-light form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    id="dateofissue" value="14/12/1978" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-3">
+                                            <label>4. Hair Color</label>
+                                            <input type="text" class="bg-light form-control" value="brown" readonly>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3">
+                                            <label>5. Eyes color</label>
+                                            <input type="text" class="bg-light form-control" value="black" readonly>
+                                        </div>
+
+                                        <div class="col-lg-3 col-sm-3">
+                                            <label>6. Gender</label>
+                                            <select class="form-select bg-light">
+                                                <option disabled value="male" selected>male</option>
+                                                <option disabled value="Female">Female</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="col-lg-2 mt-3">
+                                            <label>7.a P.O Box</label>
+                                            <input type="text" class="form-control bg-light" value="5855" readonly>
+                                        </div>
+                                        <div class="col-lg-2 mt-3">
+                                            <label>Zip Code</label>
+                                            <input type="text" class="form-control bg-light" value="5852" readonly>
+                                        </div>
+                                        <div class="col-lg-2 mt-3">
+                                            <label>Add on</label>
+                                            <input type="text" class="form-control bg-light">
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <label>Address</label>
+                                            <input type="text" class="bg-light form-control"
+                                                value="Saudi Arabia, al wakeel street" readonly>
+                                        </div>
+
+                                        <div class="col-lg-4 mt-3">
+                                            <label>Country of nationality
+                                            </label>
+                                            <input type="text" class="form-control bg-light" value="audi Arabia"
+                                                readonly>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>District
+                                            </label>
+                                            <input type="text" class="form-control bg-light" value="Alrehab" readonly>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>City
+                                            </label>
+                                            <input type="text" class="form-control bg-light" value="Jeddah" readonly>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>7.b Phone No.
+                                            </label>
+                                            <input type="tel" class="form-control bg-light" value="+9661255478"
+                                                readonly>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>Mobile No.
+                                            </label>
+                                            <input type="tel" class="form-control bg-light" value="0548745214" readonly>
+                                        </div>
+                                        <div class="col-lg-4 mt-3">
+                                            <label>7.c Email
+                                            </label>
+                                            <input type="email" class="form-control bg-light" value="Ahmed@gmail.com"
+                                                readonly>
+                                        </div>
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Airman Ceritificate</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-12  mb-3">
+                                            <label>8. Type of airman certificate held :</label>
+                                            <select class="form-select">
+                                                <option value="" disabled selected>Select</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Employment Information</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4 col-sm-4 mt-3">
+                                            <div id="Occupation">
+                                                <label>9. Occupation
+                                                </label>
+                                                <input type="text" class="form-control ">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mt-3">
+                                            <div id="Employer">
+                                                <label>10. Employer
+                                                </label>
+                                                <input type="text" class="form-control ">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4 col-sm-4 mt-3">
+                                            <div class="form-check mt-4">
+                                                <input checked onclick="return false;" class="form-check-input mt-3"
+                                                    type="checkbox" value="" onchange="toggleStatus()"
+                                                    id="SelfemployedCheck">
+                                                <label class="form-check-label mt-3" for="SelfemployedCheck">
+                                                    Self employed
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hr_section">
+                                        <span class="hr_content">13. Medical Certificate Previously Denied</span>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 mt-2">
+                                            <div class="form-check mt-4">
+                                                <input checked onclick="return false;" class="form-check-input mt-3"
+                                                    type="checkbox" value="" onchange="toggleStatu()"
+                                                    id="PreviouslyDenied">
+                                                <label class="form-check-label mt-2 Denied" for="PreviouslyDenied">
+                                                    Has your GACA, FAA, JAR or any national airman medical
+                                                    certificate ever been denied, suspended or revoked ?
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mb-3 mt-3">
+                                            <label>If yes select date :</label>
+                                            <div class="input-group" id="dateofDenied">
+                                                <input value="14/12/1978" type="text"
+                                                    class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Total Pilot Time</span>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-check checkboxList mt-3">
+                                            <input checked class="form-check-input" type="checkbox" id="pilot"
+                                                onchange="show_explaination(this.id)">
+                                            <label for="pilot">
+                                                <span class="symptoms">I am Pilot</span>
+                                            </label>
+                                        </div>
+                                        <!-- End of First check box -->
+
+                                        <!--------------------------------------->
+                                        <!--First check box explantion Start here-->
+                                        <div id="pilot_explain">
+                                            <div class="row mt-2">
+                                                <div class="col-md-3 col-sm-6 form-group">
+                                                    <label for="dateofPilot">To Date</label>
+                                                    <div class="input-group" id="dateofPilot">
+                                                        <input type="text"
+                                                            class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground">
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 form-group">
+                                                    <label for="pilottype">Type</label>
+                                                    <select id="pilottype" class="form-select">
+                                                        <option value="" selected>GACA</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-3 col-sm-6 form-group">
+                                                    <label for="past">Past 5 Months</label>
+                                                    <input type="text" class="form-control">
+                                                </div>
+                                                <div class="col-md-3 col-sm-6 form-group">
+                                                    <label for="pasttype">Type</label>
+                                                    <select id="pasttype" class="form-select">
+                                                        <option value=""></option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Last Medical Application</span>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-lg-6 form-group">
+                                            <label for="LastApplication">Date of last medical application</label>
+                                            <div class="input-group" id="LastApplication">
+                                                <input type="text"
+                                                    class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 mt-3">
+                                            <div class="form-check checkboxList  mt-3">
+                                                <input checked class="form-check-input" type="checkbox"
+                                                    id="LastApplicationDate" onchange="applicationStatus()">
+                                                <label for="LastApplicationDate">
+                                                    <span class="symptoms">No perior application</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="hr_section">
+                                        <span class="hr_content">17. Current Medication</span>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="form-check checkboxList mt-3">
+                                            <input checked class="form-check-input" type="checkbox" id="usingMedication"
+                                                onchange="show_explaination(this.id)">
+                                            <label for="usingMedication">
+                                                <span class="symptoms">Do you currently use any medication (Prescription
+                                                    or
+                                                    Nonprescription) ?</span>
+                                            </label>
+                                        </div>
+                                        <div id="usingMedication_explain">
+                                            <div class="col-lg-12 mt-3">
+                                                <div>
+                                                    <label>If yes give name, purpose, dosage and frequency:
+                                                    </label>
+                                                    <input type="text" class="form-control ">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="hr_section">
+                                        <span class="hr_content">Other Medical Information</span>
+                                    </div>
+                                    <div class="form-check checkboxList mt-3 mb-5">
+                                        <input checked class="form-check-input" type="checkbox" id="qvision">
+                                        <label for="qvision">
+                                            <span class="symptoms">18. Do you have ever use near vision contact Lens(es)
+                                                while
+                                                flying ?</span>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="AdminMedicalEvaluation">
+                            <div class="hr_section">
+                                <span class="hr_content">Other Medical Information</span>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 mb-2">
+                                    <label>Request No.
+                                    </label>
+                                    <input type="text" class="form-control" value="4283592" readonly>
+                                </div>
+                                <div class="col-sm-4 mb-2">
+                                    <label>Name</label>
+                                    <input type="text" class="form-control" value="Sirius Black" readonly>
+                                </div>
+                                <div class="col-sm-4 mb-2">
+                                    <Label>From Type</Label>
+                                    <input type="text" class="form-control" value="Lorem ipsum dolor sit amet."
+                                        readonly>
+                                </div>
+                                <div class="col-sm-4 mb-2 mt-md-0 mt-lg-3">
+                                    <Label>To be done by </Label>
+                                    <input type="text" class="form-control" value="Lorem ipsum dolor sit amet."
+                                        readonly>
+                                </div>
+                                <div class=" col-lg-4 mt-lg-3 mt-md-2">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="assignedDate">Assigned Date & Time</label>
+                                            <div class="input-group  " id="assignedDate">
+                                                <input type="text"
+                                                    class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    value="24/4/2016" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <label for=""></label>
+                                            <input style="padding:6px 20px ;" type="text" class="  form-control "
+                                                readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class=" col-lg-4  mt-lg-3 mt-md-2">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <label for="CompletiondDate">Completion Date & Time</label>
+                                            <div class="input-group  " id="CompletiondDate">
+                                                <input type="text"
+                                                    class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    value="24/4/2016" readonly>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 mb-2">
+                                            <label></label>
+                                            <input type="text" class="  form-control " readonly>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mt-lg-3 mt-md-2">
+                                    <label>Applicant Name</label>
+                                    <input type="text" class=" form-control" value="Sirius Black" readonly>
+                                </div>
+                                <div class="col-md-4 mt-lg-3 mt-md-2">
+                                    <label>Applicant Email</label>
+                                    <input type="email" class="form-control" value="SiriusBlack@gmail.com" readonly>
+                                </div>
+                                <div class="col-md-4 mt-lg-3 mt-md-2">
+                                    <label>Applicant Mobile No.</label>
+                                    <input type="text" class="form-control" value="007007" readonly>
+                                </div>
+                            </div>
+
+                            <div class="mt-5">
+                                <div class="hr_section">
+                                    <span class="hr_content">Activity Response</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 mt-lg-3 mt-md-2">
+                                    <label for="EvaluationDate">Evaluation Date</label>
+                                    <div class="input-group  " id="EvaluationDate">
+                                        <input type="text"
+                                            class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                            value="24/4/2016" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mt-lg-3 mt-md-2">
+                                    <label>Medical Code</label>
+                                    <input type="text" class="form-control" value="78345735" readonly>
+                                </div>
+
+                            </div>
+                            <div class="mt-5">
+                                <div class="hr_section">
+                                    <span class="hr_content">Applicant Details</span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-6 mt-lg-3 mt-md-2">
+                                    <label for="EvaluationDate">Applicant Name</label>
+                                    <div class="input-group  " id="EvaluationDate">
+                                        <input type="text"
+                                            class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground "
+                                            value="
+                                            24/4/2016" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 mt-lg-3 mt-md-2 ">
+                                    <label>Applicant Address</label>
+                                    <input type="text" class="form-control" value="diagon alley" readonly>
+                                </div>
+                                <div class="col-md-3 mt-4">
+                                    <label>Height</label>
+                                    <input type="text" class="form-control" value="185cm" readonly>
+                                </div>
+                                <div class="col-md-3 mt-4">
+                                    <label>weight</label>
+                                    <input type="text" class="form-control" value="80Kg" readonly>
+                                </div>
+                                <div class="col-md-3 mt-4">
+                                    <label>Eye color</label>
+                                    <input type="text" class="form-control" value="Dark brown" readonly>
+                                </div>
+                                <div class="col-md-3 mt-4">
+                                    <label>Applicant Hair</label>
+                                    <input type="text" class="form-control" value="Black" readonly>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------------------------------------------------>
+                        <!------------------------------------------------------------------------>
+                        <!------------------------------------------------------------------------>
+                        <!--------------///// Limitations Section for Admin///////---------------->
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+                        <div id="AdminLimitations">
+                            <div class="contatiner">
+                                <div class="hr_section">
+                                    <span class="hr_content">Limitations</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Limitations1">
+                                        <label class=" LimtationmedicalLabel form-check-label" for="Limitations1">
+                                            Valid only in Kingdom of Saudi Arabia
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Limitations2">
+                                        <label class=" LimtationmedicalLabel form-check-label" for="Limitations2">
+                                            Not valid for any calss after six months from the date of exmination
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Limitations3">
+                                        <label class=" LimtationmedicalLabel form-check-label" for="Limitations3">
+                                            Valid only in domestic airports
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Limitations4">
+                                        <label class=" LimtationmedicalLabel form-check-label" for="Limitations4">
+                                            Valid only in Gulf Union Cooperation Countries
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="Limitations5">
+                                        <label class=" LimtationmedicalLabel form-check-label" for="Limitations5">
+                                            Not valid for any calss after one yaear from the date of exmination
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+
+                        <!------------------------------------------------------------------------>
+                        <!------------------------------------------------------------------------>
+                        <!------------------------------------------------------------------------>
+                        <!--------------///// Limitations Section for Admin///////---------------->
+                        <!------------------------------------------------------------------------->
+                        <!------------------------------------------------------------------------->
+
+                        <div id="AdminMedicalData">
+                            <div class="container mt-5">
+                                <div class="hr_section">
+                                    <span class="hr_content">General characteristcs and body measurements</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <label>22. Hair Color*</label>
+                                        <select class="form-select">
+                                            <option value="" selected>Black</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label>23. Eyes Color*</label>
+                                        <select class="form-select">
+                                            <option value="" selected>Black</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <label>24.Gender*</label>
+                                        <select class="form-select">
+                                            <option value="Male" selected>Male</option>
+                                            <option value="Female" selected>Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4 mt-3">
+                                        <label>25. Height*</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-lg-4  mt-3">
+                                        <label>26. Weight*</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-lg-4  mt-3">
+                                        <label>27. BMI (KG/m2)*</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="hr_section ">
+                                    <span class="hr_content">SODA</span>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form-check checkboxList">
+                                            <input class="form-check-input" type="checkbox" id="soda28">
+                                            <label for="soda28">
+                                                <span class="symptoms">28. SODA</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-check checkboxList">
+                                            <input class="form-check-input" type="checkbox" id="soda29">
+                                            <label for="soda29">
+                                                <span class="symptoms">28. SODA</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-check checkboxList">
+                                            <input class="form-check-input" type="checkbox" id="soda30">
+                                            <label for="soda30">
+                                                <span class="symptoms">28. SODA</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4  mt-3">
+                                        <label>NO. Soda</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="col-lg-4 mt-3">
+                                        <label>Defect noted</label>
+                                        <select class="form-select">
+                                            <option value="" selected></option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-4 mt-3">
+                                        <div class="form-group">
+                                            <label>Validity date</label>
+                                            <div class="input-group">
+                                                <input type="text" placeholder="Date"
+                                                    class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                    id="dateofissue">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="hr_section ">
+                                    <span class="hr_content">Medical Items</span>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">29. Head, face, nick, and sclap</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQ1" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQ1" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMT1" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">30. Vascular system (Puls, amplitude, and character, arms,
+                                            legs,
+                                            others)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQ2" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQ2" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMT2" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">31. Nose</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQ3" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQ3" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMT3" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">32. Abdomen and Viscera (including hernia)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQ4" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQ4" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMT4" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">33. Sinuses</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQ5" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQ5" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMT5" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">34. Anus (Not including digital exmination)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQ6" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQ6" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMT6" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">35. Mouth and throat</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQ7" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQ7" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMT7" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">36. Skin</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQ8" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQ8" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMT8" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">37. Ears, general (Internal and external canals, hearing
+                                            under
+                                            item
+                                            30)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQ9" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQ9" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMT9" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">38. G-U system (Not including pelvic exmination)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQa" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQa" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTa" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">39. Ears drums (Perforation)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQc" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQc" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTc" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">40. Upper and lower extrimities (Strength and range of
+                                            motion)
+                                        </div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQd" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQd" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTd" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">41. Eyes, general (Vision under items 31 to 36)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQe" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQe" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTe" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">42. Spine, other musculoskeletal</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQg" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQg" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTg" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">43. Ophthalmoscopic</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQh" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQh" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTh" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion"> 44. Identifying body marks, scare, tattoos(Saze &
+                                            location)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQi" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQi" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTi" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">45. Pupils (Equality and reaction)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQj" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQj" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTj" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">46. Lymphatics</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQk" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQk" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTk" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">47. Ocular mobility (Assorted parallel movement,
+                                            nystagmus)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normal" id="MTyQl" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQl" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTl" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion"> 48. Neurologic ( Tendon reflexes, equilibrium, senses,
+                                            carnial
+                                            nerves, coordination, etc)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normam" id="MTyQm" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQm" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTm" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">49. Lungs and chest (Not including breast examination)
+                                        </div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normam" id="MTyQn" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQn" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTn" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">50. Psychiatric (Appearance, Behaviour, mood,
+                                            communication and
+                                            memory)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normam" id="MTyQo" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQo" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTo" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">51. Heart (Precordial activity, rhythm, sounds and
+                                            murmurs)</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normam" id="MTyQp" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQp" value="Observations" onclick="Questionnaire(this.id)"></div>
+                                    </div>
+                                    <div id="ExplainationMTp" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                                <div>
+                                    <div class="Parents">
+                                        <div class="quastion">52. General systemic</div>
+                                        <br>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable" type="button"
+                                                value="Normam" id="MTyQq" onclick="Questionnaire(this.id)">
+                                        </div>
+                                        <div class="Mobileq"><input class="btnl btn  Notapplicable " type="button"
+                                                id="MTnaQq" value="Observations" onclick="Questionnaire(this.id)"
+                                                checked></div>
+                                    </div>
+                                    <div id="ExplainationMTq" class="mt-3">
+                                        <input type="text" class="form-control mb-3" placeholder="Observations">
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="hr_section">
+                                    <span class="hr_content">35. Hearing / Voice Test</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-6 col-lg-6">
+                                        <label>Right Ear</label>
+                                        <select class="form-select">
+                                            <option value="" selected>Normal</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-6">
+                                        <label>Left Ear</label>
+                                        <select class="form-select">
+                                            <option value="" selected>Normal</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="hr_section">
+                                    <span class="hr_content">Hearing / Audiometer Threshold describles</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <label></label>
+                                        <div class="MedicalCaption mt-2">Right Ear</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>500</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>1000</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>2000</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>3000</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>4000</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label></label>
+                                        <div class="mt-2">Right Ear</div>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>500</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>1000</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>2000</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>3000</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <label>4000</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-4 mt-5">
+                                        <span class="hr_content">54. Distance Vision</span>
+                                        <div class="row">
+                                            <div class="col-md-4 mt-3">
+                                                <div class="medicalLabel">
+                                                    Eye (20/)
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 medicalLabel mt-3">
+                                                <div>
+                                                    Actual
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 medicalLabel mt-3">
+                                                <div>
+                                                    Corrected to </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    Right Eye
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-3">
+                                                <div>
+                                                    Right Eye
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-3">
+                                                <div>
+                                                    Right Eye
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-5">
+                                        <span class="hr_content">55. Near Vision</span>
+                                        <div class="row">
+                                            <div class="col-md-4  mt-3">
+                                                <div class="medicalLabel">
+                                                    Eye (20/)
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 medicalLabel  mt-3">
+                                                <div>
+                                                    Actual
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 medicalLabel  mt-3">
+                                                <div>
+                                                    Corrected to </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    Right Eye
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-3">
+                                                <div>
+                                                    Right Eye
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-3">
+                                                <div>
+                                                    Right Eye
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-5">
+                                        <span class="hr_content">56. Intermediate Vision (32in)</span>
+                                        <div class="row">
+                                            <div class="col-md-4  mt-3">
+                                                <div class="medicalLabel">
+                                                    Eye (20/)
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 medicalLabel  mt-3">
+                                                <div>
+                                                    Actual
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 medicalLabel  mt-3">
+                                                <div>
+                                                    Corrected to </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    Right Eye
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-3">
+                                                <div c>
+                                                    Right Eye
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-3">
+                                                <div>
+                                                    Right Eye
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-2">
+                                                <div>
+                                                    <input type="text" class="form-control" readonly>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mt-4">
+                                            <span class="hr_content">57. Color Vision</span>
+                                            <select class="form-select">
+                                                <option value="" selected>Normal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mt-4">
+                                            <span class="hr_content">58. Field of vision</span>
+                                            <select class="form-select">
+                                                <option value="" selected>Normal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="mt-4">
+                                            <span class="hr_content">60. Pulse Resting</span>
+                                            <select class="form-select">
+                                                <option value="" selected>Normal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="hr_section">
+                                    <span class="hr_content">59. Hearing / Audiometer Threshold describles</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label class="medicalLabel">Estophoria</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="medicalLabel">Exophoria</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="medicalLabel">Right hyperphoria</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="medicalLabel">Left hyperphoria</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="hr_section">
+                                    <span class="hr_content">61. Urinalysis</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <label class="medicalLabel">Urinalysis ( if uabnormal )</label>
+                                        <select class="form-select">
+                                            <option value="" selected>Normal</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="medicalLabel">Blood</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="medicalLabel">Albumin</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label class="medicalLabel">Sugar</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-lg-12 mt-3">
+                                        <label class="medicalLabel">62. EGC Date</label>
+                                        <div class="input-group">
+                                            <input type="text" placeholder="Date"
+                                                class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+                                                id="dateofissue" readonly>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="hr_section">
+                                    <span class="hr_content">Blood Pressure</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <label class="medicalLabel">63. Blood Pressure ( Systolic )</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="medicalLabel">64. Blood Pressure ( Diastolic )</label>
+                                        <input type="text" class="form-control" readonly>
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <label class="form-label medicalLabel">65. Other Test</label>
+                                        <textarea class="form-control" rows="3" readonly></textarea>
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <label class="form-label medicalLabel">66. Comments</label>
+                                        <textarea class="form-control" rows="3" readonly></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="hr_section">
+                                    <span class="hr_content">Pathology Codes</span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-5" id="CodeofPathologyCodesSection">
+                                        <label class="medicalLabel">Code</label>
+                                        <input type="text" class="codeofPathologyCodes form-control" readonly>
+                                    </div>
+                                    <div class="col-md-5" id="NameofPathologyCodesSection">
+                                        <label class="medicalLabel">Name</label>
+                                        <input type="text" class="nameofPathologyCodes form-control" readonly>
+                                    </div>
+                                    <div class="col-md-2 form_buttons">
+                                        <div>
+                                            <input id="AddPathologyCodes" type='button' class='addBtn mt-4 mx-auto'
+                                                value='Add' readonly>
+                                        </div>
+                                    </div>
+                                    <div class="mt-4">
+                                        <table class="visitTable" id="PathologyCodesTable">
+                                            <thead>
+                                                <tr>
+                                                    <th>Code</th>
+                                                    <th>Name</th>
+                                                    <th></th>
+                                                    <th></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-lg-6 mt-5">
+                                        <label class="medicalLabel">67. Abnormal Physical Findings</label>
+                                        <select class="form-select">
+                                            <option value="" selected>Normal</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-lg-6 mt-5">
+                                        <label class="medicalLabel">68. Significant medical history</label>
+                                        <select class="form-select">
+                                            <option value="" selected>Normal</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="container">
+                                <div class="hr_section">
+                                    <span class="hr_content">Documetns</span>
+                                </div>
+                                <div class=" w-100  d-flex justify-content-between">
+                                    <div class="mt-2">
+                                        Attach related medical documents
+                                    </div>
+
+                                    <div class="AlahliatYellow">
+                                        <label for="fileUploaded">Add</label>
+                                        <input type="file" id="fileUploaded" multiple readonly>
+                                    </div>
+                                </div>
+                                <div class="mt-4">
+                                    <table class="visitTable" id="filepickerTable">
+                                        <tr>
+                                            <th>File</th>
+                                            <th>Type</th>
+                                            <th>Date</th>
+                                            <th></th>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div class=" w-100  d-flex justify-content-end">
+                                    <div class="delbtn" id="DeleteTableOffilepikerHolder">
+                                        <input id="DeleteTableOffilepiker" type="button" class="delbtn" value="Delete"
+                                            onclick="myccc()">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container mt-5">
+                                <div class="hr_section">
+                                    <span class="hr_content">Medical Examiner Declaration</span>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1"
+                                        checked readonly>
+                                    <label class="medicalLabel form-check-label" for="flexCheckDefault1">
+                                        I HEREBY CERTIFY that the information provided in this form is complete, true
+                                        and
+                                        correct to
+                                        the best of my knowledge. FURTHER, I HEREBY ACKNOWLEDGE that I have read and
+                                        understood
+                                        the
+                                        Angeles University Foundation (AUF) Privacy Notice and agree there to as well. I
+                                        give my
+                                        consent to AUF to collect, use and process my personal information. I understand
+                                        that my
+                                        consent does not preclude the existence of other criteria for lawful processing
+                                        of
+                                        personal
+                                        data.
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+            aria-hidden="true">
+            <div class="modal-dialog" style="max-width: 900px;">
+                <div class="modal-content custome-border">
+                    <div class="modal-header border-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class='col-lg-12 mb-5'>
+                        <div class="text-center">
+                            <div class="tlc_textva" style='text-align:center'> <img
+                                    src="../medical_ui/images/Shape6.png" alt=""><span
+                                    style="margin-left: 20px;">Requests Notes</span></div>
+                        </div>
+                    </div>
+                    <div class="RequestsNotesHolderPage">
+                        <div class="container RequestsNotesMainPage">
+
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="RequestsNotesMessageBy mt-3 ">AME</div>
+                                <div class="medicalLabel mt-3 ">12 Sep 2022</div>
+                            </div>
+                            <div class="RequestsNotesMessageSection">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam neque
+
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="RequestsNotesMessageBy mt-3">GACA</div>
+                                <div class="medicalLabel mt-3 ">12 Sep 2022</div>
+                            </div>
+                            <div class="RequestsNotesMessageSection">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam neque
+
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <div class="RequestsNotesMessageBy mt-3">GACA</div>
+                                <div class="medicalLabel mt-3 ">12 Sep 2022</div>
+                            </div>
+                            <div class="RequestsNotesMessageSection">
+                                <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores aliquam neque
+                                </div>
+                                <div class="followingattach">
+                                    <a href="#">Lorem ipsum dolor sit amet.</a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="container ">
+                        <div class="d-flex justify-content-center">
+
+                            <select class="whcopyTheRequestsNotes form-select mt-2" aria-label="Default select example">
+                                <option value="" disabled selected>To :</option>
+                                <option value="2">GACA AME</option>
+                                <option value="1">GACA Admin</option>
+
+
+                            </select>
+                        </div>
+                        <div class="container">
+                            <div class="d-flex justify-content-center">
+                                <input type="text" class="RequestsNotesTypearea p-3 form-control"
+                                    placeholder="Write a note to AME ..">
+                            </div>
+                        </div>
+
+
+
+                        <div class="d-flex justify-content-center mt-4 mb-4">
+                            <div class="opptfile">
+                                Upload optional file <span id="spanaddFile_1" class="spanaddFile"></span>
+                            </div>
+                            <div class="">
+                                <div class="smfile ">
+                                    <div class="">
+                                        <div class="addtionoalfiledel" id="removeaddDiv_1" style="display:none;">
+                                            <label id="removeaddButton_1"
+                                                onclick="removeadditonalFile(this.id)">Remove</label>
+                                            <input type="button">
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="addtionoalfilesub" id="attachaddDiv_1">
+                                            <label for="inputaddFile_1">Attach</label>
+                                            <input type="file" id="inputaddFile_1"
+                                                onchange="uploadAddintonalFile(this.id)" multiple>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <div class=" d-flex justify-content-center border-0 mb-5 text-center">
+                                <div class=" mt-3 mx-2">
+                                    <div class="pupupSubmit ">
+                                        <input type="button" value="Send Note">
+                                    </div>
+                                </div>
+                                <div class="- mt-3">
+                                    <div class="pupupCancel">
+                                        <input type="button" value="Cancel">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div>
+                © All rights reserved to
+                &nbsp;
+                <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+                &nbsp;
+                General Authority of Civil Aviation
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" style="color: #000;text-decoration: none"
+                    href="https://gaca.gov.sa/web/en-gb/page/content-policy">Privacy Policy</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <a target="_blank" style="color: #000;text-decoration: none"
+                    href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">Secure Usage Policy</a>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Libraries end -->
+    <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+    <script src="./libraries/popper/js/popper.js"></script>
+    <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+    <script src="./libraries/slick-1.8.1/slick.js"></script>
+    <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="./libraries/pushymenu/js/pushy.js"></script>
+    <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+    <script src="./libraries/pdf.worker/pdf.js"></script>
+    <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+    <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+    <!-- Libraries end -->
+    <!-- Scripts end -->
+
+    <script src="./js/main.js"></script>
+    <!-- Scripts end -->
+
+</body>
+
+</html>

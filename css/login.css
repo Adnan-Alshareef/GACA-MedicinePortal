@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0 !important;
+}
+
+html,
+body {
+    width: 100%;
+    position: relative;
+    font-family: 'GR';
+    background: transparent url('../images/Background.png') 0px 0px no-repeat !important;
+    background-size: 100% 100% !important;
+    /* background-size: cover; */
+    position: relative;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 10px auto;
+}
+
+input[type="password"] {
+    display: block;
+    margin: 0 auto;
+}
+
+/* css loader */
+
+
+/* url('../images/loadingBG.jpg')  */
+.looginFooter {
+    padding: 10px 0 5px 0 !important;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+}
+
+.divLoading {
+    background: rgb(255, 255, 255) no-repeat 0px 0px;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 999;
+}
+
+#loading {
+    display: inline-block;
+    animation: div-loading-animation 13s;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+@keyframes div-loading-animation {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(1800deg);
+    }
+
+    100% {
+        transform: rotateY(3600deg);
+    }
+}
+
+
+/* css loader end */
+
+
+/* #container {
+    min-height: calc(100vh - 45px)!important;
+} */
+
+
+/* 
+#container {
+    min-height: calc(100vh - 186px)!important;
+    margin-top: auto;
+} */
+
+#gaca_logo_w {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.login_opt {
+    margin-top: 5px;
+}
+
+.login_opt div a {
+    text-decoration: none;
+    color: #274479;
+    font-size: 16px;
+}
+
+#gaca_logo_w img {
+    margin: 5% auto 0.3% auto;
+}
+
+#login_g20 {
+    background: transparent url(../images/G20Logo.png) 100% 0px no-repeat;
+    position: absolute;
+    background-size: auto;
+    top: 5%;
+    right: 2%;
+    width: 120px;
+    height: 107px;
+}
+
+#V2030_logo {
+    background: transparent url(../images/V2030Logo.png) 0px 0px no-repeat;
+    position: absolute;
+    background-size: auto;
+    top: 3%;
+    right: 15%;
+    width: 20px;
+    height: 81px;
+}
+
+#gaca_logo {
+    background: transparent url(../images/gaca_logo.png) 0px 0px no-repeat;
+    position: absolute;
+    background-size: auto;
+    top: 5%;
+    left: 15%;
+    width: 198px;
+    height: 81px;
+}
+
+#application_name {
+    padding-bottom: 15px;
+    padding-top: 80px;
+}
+
+#application_name h1 {
+    font-family: 'GB';
+    font-size: 34px;
+}
+
+#application_name h2 {
+    font-family: 'GB';
+    font-size: 32px;
+    color: #224a7e;
+}
+
+#application_name h3 {
+    font-family: 'GR';
+    font-size: 20px;
+    color: #0075c9;
+}
+
+#login_card {
+    position: relative;
+    text-align: center;
+    margin: 10vh auto 0px auto;
+    width: 440px;
+    height: auto;
+    background-size: 100%;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 17.321px 40px 0px rgba(39, 68, 121, 0.4);
+    border-radius: 10px;
+
+}
+
+.login_btn {
+    border-radius: 10px;
+    width: 300px;
+    height: 50px;
+}
+
+.lp,
+.sign_btn {
+    height: 3rem;
+
+    font-size: 18px;
+    margin-top: 25px;
+    width: 300px;
+}
+
+.sign_btn {
+    background-color: #0075c9 !important;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'GB';
+    text-decoration: none;
+    border: none;
+    vertical-align: middle;
+    width: 300px;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.sign_btn:hover {
+    background-color: #274479 !important;
+    color: white;
+    transition: 0.4s;
+}
+
+a.sign_btn {
+    color: white !important;
+    text-align: center;
+    font-size: 20px;
+}
+
+#login_card_body {
+    padding-top: 20px;
+}
+
+#login_card_body form {
+    padding: 0px 30px 15px 30px;
+}
+
+#login_card_body p a {
+    text-decoration: none;
+    color: #274479;
+    font-size: 16px;
+}
+
+.platforms-click {
+    display: flex;
+    justify-content: center;
+
+}
+
+.platforms-click>a {
+    display: inline-block;
+    width: 100% !important;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+    font-family: 'GB';
+
+}
+
+.platforms-clickk {
+    display: flex;
+    justify-content: center;
+
+}
+
+.platforms-clickk>div {
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.7rem;
+    font-family: 'GB';
+}
+
+.GacaUser {
+    color: #0075c9;
+    border-bottom: 5px solid #0075c9;
+
+}
+
+.NafathUser {
+    color: #18A685;
+}
+
+
+.platforms-clickk>div a {
+    display: inline-block;
+    width: 100% !important;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 1.7rem;
+    font-family: 'GB';
+
+}
+
+.signinby_active {
+    background-color: #ecf2f7 !important;
+    color: #0075c9 !important;
+
+}
+
+.signinby {
+    color: #ecf2f7;
+    background-color: #0075c9;
+    transition: .5s;
+}
+
+.signinby:hover {
+    background-color: #274479 !important;
+    color: #ffffff !important;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Footer */
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    clear: both;
+    color: #ffffff;
+    background-color: transparent;
+    width: 100%;
+    text-align: center;
+    margin: 0 !important;
+    padding: 10px 0 5px 0 !important;
+}
+
+footer div {
+    font-size: 16px;
+    text-align: center;
+    direction: ltr;
+    color: black;
+    font-family: 'GR';
+    padding-bottom: 20px;
+}
+
+footer div>div {
+    display: inline-block;
+}
+
+.langauge_switcher {
+    font-family: 'GB';
+    color: black;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.login_tl {
+    display: block;
+    width: 100%;
+    background-color: #f2f6fa;
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    font-family: 'GR';
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    transition: 0.4s;
+}
+
+.login_tl:hover {
+    display: block;
+    width: 100%;
+    background-color: #274479;
+    margin: 0px !important;
+    padding: 0px !important;
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    font-family: 'GB';
+    padding-top: 15px !important;
+    padding-bottom: 15px !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    transition: 0.4s;
+}
+
+.tl_active {
+    color: white;
+    background-color: #0075c9;
+    font-family: 'GB';
+    transition: 0.4s;
+    pointer-events: none;
+}
+
+.sign_up {
+    font-family: 'GB';
+    color: #0075c9 !important;
+    text-decoration: underline !important;
+}
+
+.inactive_otp {
+    font-family: 'GB';
+    color: #ababab !important;
+    text-decoration: underline !important;
+    cursor: not-allowed !important;
+}
+
+.secondarycolor {
+    font-family: 'GB';
+    color: #0075c9;
+}
+
+.htit__edc {
+    font-size: 24px;
+    font-family: "GB";
+}
+
+
+
+
+.forget_password {
+    font-family: 'GB';
+    color: #0075c9 !important;
+}
+
+#login_footer {
+    background-color: white;
+    border: none;
+}
+
+.g-recaptcha {
+    width: 100%;
+}
+
+.g-recaptcha div {
+    margin: 0 auto;
+}
+
+.threechoice {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.threechoice>div {
+    width: 30%;
+}
+
+.threechoice__inner {
+    width: 78px;
+    height: 78px;
+    border-width: 1px;
+    border-color: rgb(202, 209, 215);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    font-family: 'GL';
+    font-size: 2rem;
+}
+
+.threechoice__inner.active {
+    color: #fff;
+    background-color: #00a886 !important;
+    padding: 14px;
+    font-family: 'GB';
+}
+
+.testfont {
+    font-size: 5rem;
+}
+
+.LoginFormHolder {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@media (max-width: 1280px) {
+    #login_card {
+        margin-top: 2vh;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #application_name {
+
+        padding-top: 60px;
+    }
+
+    .login_card {
+        width: 5% !important;
+    }
+
+    .footerText {
+        text-align: center;
+        font-size: 10px;
+
+    }
+
+    #login_card {
+        /* margin-top: 10vh;
+        min-width: 80vw;
+        max-width: 80vw;
+        min-height: 68vh;
+        max-height: 68vh; */
+        width: auto;
+        height: auto;
+        margin: 2vh 20px;
+
+    }
+
+    #gaca_logo_w img {
+        width: 99px;
+        height: 34.5px;
+    }
+
+    #application_name {
+        margin-top: 0vh;
+    }
+
+    .looginFooter {
+
+        font-size: 9px;
+    }
+
+    footer {
+        display: none !important;
+        font-size: 9px;
+        background-color: transparent !important;
+    }
+
+    .fotter_copyright {
+        background-color: #0075c9;
+        margin-bottom: 40px;
+    }
+}

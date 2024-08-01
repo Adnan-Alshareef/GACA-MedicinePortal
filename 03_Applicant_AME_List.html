@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- favicon tags -->
+    <link rel="apple-touch-icon" sizes="60x60" href="./images/favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon.ico" />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./images/favicon/mstile-150x150.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- favicon tags end -->
+
+    <title>GACA | الهيئة العامة للطيران المدني</title>
+    <!-- Libraries -->
+    <link rel="stylesheet" href="./libraries/bootstrap-5.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick.css" />
+    <link rel="stylesheet" href="./libraries/slick-1.8.1/slick-theme.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="./libraries/datatable/css/datatable-custom-theme.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy.css" />
+    <link rel="stylesheet" href="./libraries/pushymenu/css/pushy-en.css" />
+    <!-- Libraries end -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./fonts/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.en.css" />
+    <link rel="stylesheet" href="./css/style.mobile.css" />
+    <!-- Styles end -->
+
+</head>
+
+<body>
+    <!-- Header & Navbar -->
+    <div class="logos">
+        <div class="container logos">
+            <div class="text_link_component t_op_header">
+                <div class="tlc_first">
+                    <div class="tlc_text">
+                        <img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+                    </div>
+                </div>
+                <div class="tlc_last gacalogo">
+                    <!-- <div class="op">
+                        <p class="welcome_text">Welcome back <span>Ahmed</span> <span class="numb_of_notification">10</span></p>
+                        <a id="profile" data-bs-toggle="modal" data-bs-target="#profileModal" href="profile_link">MY PROFILE</a>
+                        <a id="signout" data-bs-toggle="modal" data-bs-target="#signoutModal" href="signoutlink">SIGN OUT</a>
+                    </div> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item ">
+                        <a href="#" class="nav-link">My Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Medical Certificates</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">GACA AMEs</a>
+                    </li>
+                </ul>
+                <div class="ms-auto">
+                    <div class="d-inline-flex m-5">
+                        <div class="notificaationbadge">2</div>
+                        <div class="notificaationCaption">New pending medical request</div>
+                    </div>
+                    <input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"></input>
+                    <input class="loginbtn btn " type="button" value="SIGN OUT"></input>
+                </div>
+            </div>
+
+            <button class="menu-btn">☰</button>
+        </div>
+    </nav>
+    <!-- Pushy Menu -->
+    <nav class="pushy pushy-left">
+        <div class="pushy-content">
+            <a href="#" class="mobile-x">×</a>
+            <div id="op-mobile" class="text-center">
+            </div>
+            <ul class="mobile-menu">
+
+                <li><a href="#">Homepage</a></li>
+                <li><a href="#">My Requests</a></li>
+                <li><a href="#">Medical Certificates</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Site Overlay -->
+    <div class="site-overlay"></div>
+
+    <!-- Main -->
+    <div id="container" style="background-color: #f5f7f9;">
+        <!-- Button trigger modal -->
+        <div class="container" id="main">
+            <div class="inner_content_dashboard">
+                <div class="inner_content_section_btnone ">
+                    <div class="serech_section">
+                        <div>
+                            <div class="tlm_text">
+                                GACA AMEs <span>(540)</span>
+                            </div>
+                        </div>
+                        <div class="mt-2 ame_Search">
+                            <input class="form-control" type="text" placeholder="Search AMEs...">
+                            <button class="AmeSearch-btn" data-bs-toggle="modal"
+                                data-bs-target=".AME_Details">Search</button>
+                        </div>
+
+                    </div>
+                </div>
+                <table class="Ame-list CustomTable CustomTable_1 adminTable table  table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Practice Name</th>
+                            <th>Organization</th>
+                            <th>Country</th>
+                            <th>City</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ahmed abdullah bafadl</td>
+                            <td>King Fahad International Hospital</td>
+                            <td>Saudi Arabia</td>
+                            <td>Riyadh</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed abdullah bafadl</td>
+                            <td>King Fahad International Hospital</td>
+                            <td>Saudi Arabia</td>
+                            <td>Riyadh</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed bafadl</td>
+                            <td>Saudi German hospital in Riyadh</td>
+                            <td>Saudi Arabia</td>
+                            <td>Dammam</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mike Jack Donaldson</td>
+                            <td>Al Habib medical Center ( Riyadh )</td>
+                            <td>United Kingdom</td>
+                            <td>Manchester</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed abdullah bafadl</td>
+                            <td>King Fahad International Hospital</td>
+                            <td>Saudi Arabia</td>
+                            <td>Jeddah</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed abdullah bafadl</td>
+                            <td>King Fahad International Hospital</td>
+                            <td>Saudi Arabia</td>
+                            <td>Riyadh</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed abdullah bafadl</td>
+                            <td>King Fahad International Hospital</td>
+                            <td>Saudi Arabia</td>
+                            <td>Riyadh</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed bafadl</td>
+                            <td>Saudi German hospital in Riyadh</td>
+                            <td>Saudi Arabia</td>
+                            <td>Dammam</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mike Jack Donaldson</td>
+                            <td>Al Habib medical Center ( Riyadh )</td>
+                            <td>United Kingdom</td>
+                            <td>Manchester</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed abdullah bafadl</td>
+                            <td>King Fahad International Hospital</td>
+                            <td>Saudi Arabia</td>
+                            <td>Jeddah</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed abdullah bafadl</td>
+                            <td>King Fahad International Hospital</td>
+                            <td>Saudi Arabia</td>
+                            <td>Riyadh</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed abdullah bafadl</td>
+                            <td>King Fahad International Hospital</td>
+                            <td>Saudi Arabia</td>
+                            <td>Riyadh</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed bafadl</td>
+                            <td>Saudi German hospital in Riyadh</td>
+                            <td>Saudi Arabia</td>
+                            <td>Dammam</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mike Jack Donaldson</td>
+                            <td>Al Habib medical Center ( Riyadh )</td>
+                            <td>United Kingdom</td>
+                            <td>Manchester</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ahmed abdullah bafadl</td>
+                            <td>King Fahad International Hospital</td>
+                            <td>Saudi Arabia</td>
+                            <td>Jeddah</td>
+                            <td>
+                                <div><button class="AmeInfo-btn" data-bs-toggle="modal"
+                                        data-bs-target=".AME_Details">More details</button></div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="modal fade AME_Details" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-xl ">
+                        <div class="modal-content ">
+                            <div class="modal-header border-0">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class='col-lg-12 mb-5'>
+                                <div class="text-center">
+                                    <div class="tlc_textva" style='text-align:center'> AME Details
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container AmeModal">
+                                <form class='row '>
+                                    <div class='col-lg-6'>
+                                        <div class="mb-3">
+                                            <label class="medicalLabel">Name</label>
+                                            <input type="text" class="form-control" value="Adnan Alshareef" readonly>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-6'>
+                                        <div class="mb-3">
+                                            <label class="medicalLabel ">Organization</label>
+                                            <input type="text" class="form-control"
+                                                value="King Fahad International Hospital" readonly>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-12'>
+                                        <div class="mb-3">
+                                            <label class="medicalLabel ">Opening Hours</label>
+                                            <input type="text" class="form-control" value="From 9 am to 6 pm everyday"
+                                                readonly>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class="mb-3">
+                                            <label class="medicalLabel">Country</label>
+                                            <input type="text" class="form-control" value="Saudi Arabia" readonly>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class="mb-3">
+                                            <label class="medicalLabel">City</label>
+                                            <input type="text" class="form-control" value="Jeddah" readonly>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-4'>
+                                        <div class="mb-3">
+                                            <label class="medicalLabel">District</label>
+                                            <input type="text" class="form-control" value="Alrehab" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class='col-lg-6'>
+                                        <div class="mb-3">
+                                            <label class="medicalLabel">Email</label>
+                                            <input type="text" class="form-control" value="docmail@mail.com" readonly>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-6'>
+                                        <div class="mb-3">
+                                            <label class="medicalLabel">Phone</label>
+                                            <input type="text" class="form-control" value="+966124587457" readonly>
+                                        </div>
+                                    </div>
+                                    <div class='col-lg-6'>
+                                        <div class="mb-3">
+                                            <label class="medicalLabel">Mobile</label>
+                                            <input type="text" class="form-control" value="+966547841254" readonly>
+                                        </div>
+                                    </div>
+
+                                    <div class='col-lg-6 mb-5'>
+                                        <div class="mb-5">
+                                            <label class="medicalLabel">Fax</label>
+                                            <input type="text" class="form-control" value="+966214587444" readonly>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- Main END -->
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div>
+                    2021 - All rights reserved to
+                    <img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo"> General Authority of Civil
+                    Aviation ©
+                </div>
+            </div>
+        </footer>
+
+
+
+
+        <!-- Footer END -->
+
+
+        <!-- Libraries end -->
+        <script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+        <script src="./libraries/popper/js/popper.js"></script>
+        <script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+        <script src="./libraries/slick-1.8.1/slick.js"></script>
+        <script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+        <script src="./libraries/pushymenu/js/pushy.js"></script>
+        <script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+        <script src="./libraries/pdf.worker/pdf.js"></script>
+        <script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+        <script src="./libraries/datepicker/js/datepicker_script.js"></script>
+        <!-- Libraries end -->
+        <!-- Scripts end -->
+        <script src="./js/main.js"></script>
+        <!-- Scripts end -->
+
+</body>
+
+</html>

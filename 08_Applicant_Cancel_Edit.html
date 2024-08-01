@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html dir="ltr" lang="en">
+
+
+
+
+
+<head id="head">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GACA - الهيئة العامة للطيران المدني</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./images/favicon/site.webmanifest">
+
+	<link rel="stylesheet" type="text/css" href="./libraries/bootstrap-5.1.3/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./libraries/datepicker/css/bootstrap-datetimepicker.css">
+	<link rel="stylesheet" type="text/css" href="./libraries/slick-1.8.1/slick.css">
+	<link rel="stylesheet" type="text/css" href="./libraries/slick-1.8.1/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="./libraries/datatable/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="./libraries/datatable/css/datatable-custom-theme.css">
+	<link rel="stylesheet" type="text/css" href="./libraries/pushymenu/css/pushy.css">
+	<link rel="stylesheet" type="text/css" href="./libraries/pushymenu/css/pushy-en.css" />
+	<link rel="stylesheet" type="text/css" href="./libraries/Magnific-Popup/css/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="./libraries/selectize/css/selectize.css">
+	<!-- Libraries end -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="./fonts/fonts.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.en.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.mobile.css">
+
+
+	<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+
+	<script src="./libraries/jquery-3.6.0/js/jquery.js"></script>
+	<script src="./libraries/selectize/js/selectize.min.js"></script>
+	<script src="./libraries/ChartJs/chart.js"></script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="logos">
+		<div class="container logos">
+			<div class="text_link_component t_op_header">
+				<div class="tlc_first">
+					<div class="tlc_text">
+						<img class="gacalogo op_logo_image" src="./images/gaca_header_logo.png" alt="">
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div style="position: sticky;z-index: 10;">
+		<nav class="navbar navbar-expand-lg navbar-dark">
+			<div class="container">
+				<div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+
+
+					<ul class="navbar-nav">
+						<li class="nav-item active">
+							<a href="/md/individual/request/list" class="nav-link">My Requests</a>
+						</li>
+						<li class="nav-item ">
+							<a href="/md/individual/certificate/list" class="nav-link">Medical Certificates</a>
+						</li>
+						<li class="nav-item ">
+							<a href="/md/individual/ame/list" class="nav-link">GACA AMEs</a>
+						</li>
+					</ul>
+					<div class="ms-auto">
+						<div class="d-inline-flex m-5">
+							<div class="notificaationbadge">0</div>
+							<div class="notificaationCaption">New notifications</div>
+						</div>
+
+
+
+						<input class="btnl btn  myprofilebtn m-2" type="button" value="MY PROFILE"
+							onclick="location.href='/md/individual/profile';">
+						<form id="logoutForm" style="display: inline-flex !important;" action="/md/logout"
+							method="post">
+							<input type="hidden" name="_csrf" value="85117256-0ccb-40db-a399-1ba6159fc8a6" />
+							<input class="loginbtn btn" type="submit" value="SIGN OUT"
+								onclick="location.href='/md/logout';">
+						</form>
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+				</div>
+
+
+
+				<button class="menu-btn">&#9776;</button>
+			</div>
+		</nav>
+	</div>
+
+	<nav class="pushy pushy-left">
+		<div class="pushy-content">
+			<a href="#" class="mobile-x">x</a>
+			<div id="op-mobile" class="text-center">
+			</div>
+			<ul class="mobile-menu">
+
+
+
+
+				<li class="active"><a href="/md/individual/request/list">My Requests</a></li>
+				<li><a href="/md/individual/certificate/list">Medical Certificates</a></li>
+				<li><a href="/md/individual/ame/list">GACA AMEs</a></li>
+				<li><a href="/md/individual/profile">MY PROFILE</a></li>
+				<li><a href="javascript:;" onclick="document.getElementById('logoutForm').submit();">SIGN OUT</a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+			</ul>
+		</div>
+	</nav>
+
+	<div class="site-overlay"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<div class="container-sm">
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="tlcAd_text mt-4">
+					<img src="./images/RequestInfoXs.png" alt="">
+					Request Details
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="ms-auto" style="width: 25%;">
+					<div class=" tlcAd_text mt-4 ms-auto">
+						<span class="toot">
+							<a class="toot" href="#" onclick="history.back()">Go Back <img src="./images/rightArrow.png"
+									alt=""></a>
+						</span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="inner_content_section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<div class="Request_No">
+							Request Number <span>MC.2023.0056026</span>
+							<div class="NrStatus NrStatusinline">
+
+
+
+
+
+								<div class="missingstatus">
+									<div>NEED INFO</div>
+								</div>
+
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<br><br>
+
+				<div class="row">
+					<div class="col-md-3">
+						<label class="medicalLabel">Type</label>
+						<div class="detail_data">Cancellation Request</div>
+
+					</div>
+					<div class="col-md-3">
+						<label class="medicalLabel">Email</label>
+						<div class="detail_data">test3@test.fr</div>
+					</div>
+					<div class="col-md-3">
+						<label class="medicalLabel">Application date</label>
+						<div class="input-group ">
+
+							<div class="detail_data">09/07/2023</div>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<label class="medicalLabel">Status Date</label>
+						<div class="input-group ">
+
+							<div class="detail_data">09/07/2023</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="hr_section">
+						<span class="hr_content">Request to Cancel Information</span>
+					</div>
+
+					<div class="row">
+						<div class="col-lg-3 col-12">
+							<label class="medicalLabel">Request No.</label>
+							<div class="input-group ">
+								<input type="text" class="form-control" value="MC.2023.0056013" readonly="">
+							</div>
+						</div>
+						<div class="col-lg-3 col-12">
+							<label class="medicalLabel">Class</label>
+							<select class="form-select" disabled>
+								<option selected>
+
+
+									Class 2
+
+
+								</option>
+							</select>
+						</div>
+						<div class="col-lg-3 col-12">
+							<label class="medicalLabel">Status</label>
+							<select class="form-select" disabled>
+								<option selected>
+
+
+
+									APPROVED
+
+
+
+
+
+
+
+								</option>
+							</select>
+						</div>
+						<a href="/md/individual/request/view?requestId=174581" class="Showcertificate col-md-3 mt-4">
+							<div>
+								View Medical Request
+							</div>
+						</a>
+					</div>
+
+
+					<br>
+					<div class="row">
+						<div class="col-lg-3 col-12">
+							<label class="medicalLabel">Certificate No.</label>
+							<div class="input-group ">
+								<input type="text" class="form-control" value="MC-50008" readonly="">
+							</div>
+						</div>
+						<div class="col-lg-3 col-12">
+							<label class="medicalLabel">Examination Date</label>
+							<div class="input-group ">
+
+								<input type="text"
+									class="form-control ptrs-form-control datepicker-g datepicker-icon dateBackground"
+									value="31/05/2023" readonly="">
+							</div>
+						</div>
+						<div class="col-lg-3 col-12">
+							<label class="medicalLabel">Status</label>
+							<select class="form-select" disabled>
+								<option selected>
+
+									ACTIVE
+
+
+
+
+
+								</option>
+							</select>
+						</div>
+						<a href="/md/individual/certificate/view?certificateId=174594"
+							class="Showcertificate col-md-3 mt-4">
+							<div>
+								View Certificate
+							</div>
+						</a>
+					</div>
+
+
+					<div class="hr_section">
+						<span class="hr_content">Cancellation Justification</span>
+					</div>
+					<div class="row">
+						<div class="col-md-12 mb-3">
+							<label class="medicalLabel">Describe please why you want to cancel your medical certificate
+								request or certificate</label>
+							<textarea class="form-control" name="comment" cols="30" rows="4"
+								disabled>please cancel it</textarea>
+						</div>
+					</div>
+
+					<div class="hr_section">
+						<span class="hr_content">Related Documents</span>
+					</div>
+					<table class="visitTable">
+						<thead>
+							<tr>
+								<th>File</th>
+								<th>Type</th>
+								<th>Name</th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td style="width:500px">1. Additional Attachment</td>
+								<td>application/pdf</td>
+								<td style="color: #00a885;">Ahmad Halawany&#39;s Appeal.pdf</td>
+								<td>
+									<div class="viewbtn">
+										<a
+											href="/md/individual/fileData/5aryhjlvfZRs18SUWvaEtUdacUYOKqqb2EXHbLw6p0iuGpfNobx5WsyzmknYfDsI">View</a>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td style="width:500px">2. Additional Attachment</td>
+								<td>application/pdf</td>
+								<td style="color: #00a885;">55GACA - -1-2-1-2-4 (1)-2 (1).pdf</td>
+								<td>
+									<div class="viewbtn">
+										<a
+											href="/md/individual/fileData/Er2JIrmoxr5ql4qYl18Xq5NEAYCZKnb9wAomB5hderCrfSW8seXU0euvPln2aNf2">View</a>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td style="width:500px">3. Additional Attachment</td>
+								<td>application/pdf</td>
+								<td style="color: #00a885;">55GACA - -1-2-1-2-4 (1)-2-2.pdf</td>
+								<td>
+									<div class="viewbtn">
+										<a
+											href="/md/individual/fileData/xrYarmaNGOIpWujROP2aNc2ImsXbVGIs4SbIx7qwnQNZ7MwLa1qbbapyjvPwaXH3">View</a>
+									</div>
+								</td>
+							</tr>
+
+							<tr>
+								<td style="width:500px">4. Additional Attachment</td>
+								<td>application/pdf</td>
+								<td style="color: #00a885;">55GACA - -1-2-1-2-4 (1)-2-1.pdf</td>
+								<td>
+									<div class="viewbtn">
+										<a
+											href="/md/individual/fileData/qJQ0mVtRk5yVlmeg6k34qbHHufSJ0cMWCI3ou3OzmHtaZzzF2clyXrdDzRa1jy5H">View</a>
+									</div>
+								</td>
+							</tr>
+
+						</tbody>
+					</table>
+
+
+					<div class="hr_section">
+						<span class="hr_content">Additional Information</span>
+					</div>
+
+					<div class="d-flex w-100 justify-content-between">
+						<div class="RequestsNotesMessageBy mt-3 ">Fahad Al-Khaibari
+							<span style="color: #b37104;font-family: 'GR';">GACA Note</span>
+						</div>
+
+						<div class="medicalLabel mt-3 ">09/07/2023 11:06 AM</div>
+					</div>
+					<div class="RequestsNotesMessageSection">
+						<div>please attach the right documents</div>
+
+					</div>
+
+					<div class="d-flex w-100 justify-content-between">
+						<div class="RequestsNotesMessageBy mt-3 ">Mohamed El Amine CHOUIHA
+
+						</div>
+
+						<div class="medicalLabel mt-3 ">09/07/2023 02:38 PM</div>
+					</div>
+					<div class="RequestsNotesMessageSection">
+						<div>please find attached</div>
+
+						<br>
+
+						<div class="followingattach">
+							<a
+								href="/md/individual/fileData/5dEy9d0Yl1z23RodwzRzKnUhew5KwzcKeUuRrUHn2YbDTJ0qRZBw1zfj4hFqZlW6">
+								Ahmad Halawany&#39;s Appeal.pdf
+							</a>
+						</div>
+
+						<div class="followingattach">
+							<a
+								href="/md/individual/fileData/mmyn2YmtqMTBslG2qeJr7wdhoTlp4vJ7C8ywf3ZRLJKK7FoJzd9ZezkyIXDzTfJN">
+								55GACA - -1-2-1-2-4 (1)-2 (1).pdf
+							</a>
+						</div>
+
+						<div class="followingattach">
+							<a
+								href="/md/individual/fileData/Csex9gCYD12ibuq5SUlkDG1XsDMQRETmWg7dxRLjdPSUJtIxWeJQwugQvazDCSXs">
+								55GACA - -1-2-1-2-4 (1)-2-3.pdf
+							</a>
+						</div>
+
+
+					</div>
+
+					<div class="d-flex w-100 justify-content-between">
+						<div class="RequestsNotesMessageBy mt-3 ">Fahad Al-Khaibari
+							<span style="color: #b37104;font-family: 'GR';">GACA Note</span>
+						</div>
+
+						<div class="medicalLabel mt-3 ">09/07/2023 02:51 PM</div>
+					</div>
+					<div class="RequestsNotesMessageSection">
+						<div>please attach the correct documents</div>
+
+					</div>
+
+
+
+
+					<form id="addNoteFrom"
+						action="/md/individual/cancel/addInfo?_csrf=85117256-0ccb-40db-a399-1ba6159fc8a6" method="POST"
+						enctype="multipart/form-data">
+						<div class="row">
+							<div class="col-md-12 mt-3">
+
+								<textarea class="form-control" name="comment"
+									placeholder="Write an additional information ..." cols="30" rows="4" required
+									form="addNoteFrom"></textarea>
+							</div>
+						</div>
+
+
+						<div class="d-flex justify-content-center align-items-center mt-4 mb-4" id="rowDiv_1" style="">
+							<div class="opptfile">
+								<label class="optional_large_label">Additional Attachment</label>
+								<span id="spanFile_1" class="spanaddFile"></span>
+							</div>
+							<div class="">
+								<div class="smfile ">
+									<div class="">
+										<div class="addtionoalfiledel" id="removeDiv_1" style="display:none;">
+											<label id="removeButton_1" onclick="removeAddFile(this.id)">Remove</label>
+											<input type="button">
+										</div>
+									</div>
+									<div class="">
+										<div class="addtionoalfilesub" id="attachDiv_1">
+											<label for="inputFile_1">Attach</label>
+											<input type="file" id="inputFile_1" name="1_ADDITIONAL_ATTACHMENT"
+												onchange="uploadAddFile(this.id)"
+												accept="application/pdf,image/jpeg,image/png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex justify-content-center align-items-center mt-4 mb-4" id="rowDiv_2"
+							style="display:none !important;">
+							<div class="opptfile">
+								<label class="optional_large_label">Additional Attachment</label>
+								<span id="spanFile_2" class="spanaddFile"></span>
+							</div>
+							<div class="">
+								<div class="smfile ">
+									<div class="">
+										<div class="addtionoalfiledel" id="removeDiv_2" style="display:none;">
+											<label id="removeButton_2" onclick="removeAddFile(this.id)">Remove</label>
+											<input type="button">
+										</div>
+									</div>
+									<div class="">
+										<div class="addtionoalfilesub" id="attachDiv_2">
+											<label for="inputFile_2">Attach</label>
+											<input type="file" id="inputFile_2" name="2_ADDITIONAL_ATTACHMENT"
+												onchange="uploadAddFile(this.id)"
+												accept="application/pdf,image/jpeg,image/png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex justify-content-center mt-4 mb-4" id="rowDiv_3"
+							style="display:none !important;">
+							<div class="opptfile">
+								<label class="optional_large_label">Additional Attachment</label>
+								<span id="spanFile_3" class="spanaddFile"></span>
+							</div>
+							<div class="">
+								<div class="smfile ">
+									<div class="">
+										<div class="addtionoalfiledel" id="removeDiv_3" style="display:none;">
+											<label id="removeButton_3" onclick="removeAddFile(this.id)">Remove</label>
+											<input type="button">
+										</div>
+									</div>
+									<div class="">
+										<div class="addtionoalfilesub" id="attachDiv_3">
+											<label for="inputFile_3">Attach</label>
+											<input type="file" id="inputFile_3" name="3_ADDITIONAL_ATTACHMENT"
+												onchange="uploadAddFile(this.id)"
+												accept="application/pdf,image/jpeg,image/png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex justify-content-center mt-4 mb-4" id="rowDiv_4"
+							style="display:none !important;">
+							<div class="opptfile">
+								<label class="optional_large_label">Additional Attachment</label>
+								<span id="spanFile_4" class="spanaddFile"></span>
+							</div>
+							<div class="">
+								<div class="smfile ">
+									<div class="">
+										<div class="addtionoalfiledel" id="removeDiv_4" style="display:none;">
+											<label id="removeButton_4" onclick="removeAddFile(this.id)">Remove</label>
+											<input type="button">
+										</div>
+									</div>
+									<div class="">
+										<div class="addtionoalfilesub" id="attachDiv_4">
+											<label for="inputFile_4">Attach</label>
+											<input type="file" id="inputFile_4" name="4_ADDITIONAL_ATTACHMENT"
+												onchange="uploadAddFile(this.id)"
+												accept="application/pdf,image/jpeg,image/png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="d-flex justify-content-center mt-4 mb-4" id="rowDiv_5"
+							style="display:none !important;">
+							<div class="opptfile">
+								<label class="optional_large_label">Additional Attachment</label>
+								<span id="spanFile_5" class="spanaddFile"></span>
+							</div>
+							<div class="">
+								<div class="smfile ">
+									<div class="">
+										<div class="addtionoalfiledel" id="removeDiv_5" style="display:none;">
+											<label id="removeButton_5" onclick="removeAddFile(this.id)">Remove</label>
+											<input type="button">
+										</div>
+									</div>
+									<div class="">
+										<div class="addtionoalfilesub" id="attachDiv_5">
+											<label for="inputFile_5">Attach</label>
+											<input type="file" id="inputFile_5" name="5_ADDITIONAL_ATTACHMENT"
+												onchange="uploadAddFile(this.id)"
+												accept="application/pdf,image/jpeg,image/png">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="form_buttons row mt-5 mb-3">
+							<div class="col-lg-6 col-3 mx-auto">
+								<a class="link_form dltbtn float-none proceed_button"
+									href="/md/individual/request/list">
+									Cancel
+								</a>
+							</div>
+							<div class="col-lg-6 col-3 mx-auto">
+								<button type="submit" class="link_form linkbgim float-none mr-auto proceed_button"
+									name="submit" id="submit">Send</button>
+							</div>
+							<input type="hidden" name="requestId" value="174815" />
+						</div>
+					</form>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<footer>
+		<div class="container">
+			<div>
+				© All rights reserved to
+				&nbsp;
+				<img id="footerimg" src="./images/GACA Logo.png" alt="GACA Logo">
+				&nbsp;
+				General Authority of Civil Aviation
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a target="_blank" style="color: #000;text-decoration: none"
+					href="https://gaca.gov.sa/web/en-gb/page/content-policy">
+					Privacy Policy
+				</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a target="_blank" style="color: #000;text-decoration: none"
+					href="https://gaca.gov.sa/web/en-gb/content/secure-usage-policy">
+					Secure Usage Policy
+				</a>
+
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<a target="_blank" style="color: #000;text-decoration: none"
+					href="./docs/RegisterInMedicalPortalAsApplicantV1.1.pdf">
+					User Guide
+				</a>
+
+
+
+
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- Footer END -->
+
+	<!-- Libraries end -->
+	<script src="./libraries/popper/js/popper.js"></script>
+	<script src="./libraries/bootstrap-5.1.3/js/bootstrap.js"></script>
+	<script src="./libraries/slick-1.8.1/slick.js"></script>
+	<script src="./libraries/datatable/js/jquery.dataTables.min.js"></script>
+	<script src="./libraries/pushymenu/js/pushy.js"></script>
+
+	<script src="./libraries/datepicker/js/bootstrap-hijri-datetimepicker.js"></script>
+	<script src="./libraries/datepicker/js/datepicker_script.js"></script>
+	<script src="./libraries/Magnific-Popup/js/jquery.magnific-popup.js"></script>
+	<script src="./libraries/pdf.worker/pdf.js"></script>
+
+	<!-- Libraries end -->
+	<!-- Scripts end -->
+	<script src="./js/main.js"></script>
+	<!-- Scripts end -->
+</body>
+
+</html>
